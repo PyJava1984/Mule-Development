@@ -1,0 +1,356 @@
+!SESSION 2015-08-31 14:31:37.846 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Gary2013/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/Gary2013/.eclipse_keyring -showlocation
+
+This is a continuation of log file /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.metadata/.bak_0.log
+Created Time: 2015-08-31 16:29:53.868
+
+!ENTRY org.mule.tooling.core 4 0 2015-08-31 16:29:53.868
+!MESSAGE DataSense external metadata retrieval failed for global element db:select
+!STACK 0
+org.mule.common.MuleArtifactFactoryException: There seems to be a problem in your XML configuration. Please fix and retry.
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.doGetArtifact(SpringXmlConfigurationMuleArtifactFactory.java:278)
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.getArtifactForMessageProcessor(SpringXmlConfigurationMuleArtifactFactory.java:66)
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.getArtifactForMessageProcessor(SpringXmlConfigurationMuleArtifactFactory.java:41)
+	at org.mule.tooling.metadata.api.utils.MetadataRetriever.getExternalMetadata(MetadataRetriever.java:55)
+	at org.mule.tooling.ui.modules.core.metadata.MetadataRetrievalManager.getInputOutputMetadata(MetadataRetrievalManager.java:172)
+	at org.mule.tooling.ui.modules.core.metadata.action.GetInputOutputMetadata.executeMetadataRetrieverRunnableAction(GetInputOutputMetadata.java:85)
+	at org.mule.tooling.ui.modules.core.metadata.action.BaseGetMetadataOperation$3$1.call(BaseGetMetadataOperation.java:197)
+	at org.mule.tooling.ui.modules.core.metadata.action.BaseGetMetadataOperation$3$1.call(BaseGetMetadataOperation.java:1)
+	at org.mule.tooling.utils.SilentRunner.run(SilentRunner.java:25)
+	at org.mule.tooling.core.StudioDesignContextRunner.runSilentWithMuleProject(StudioDesignContextRunner.java:17)
+	at org.mule.tooling.core.StudioDesignContextRunner.runSilentWithMuleProject(StudioDesignContextRunner.java:37)
+	at org.mule.tooling.ui.modules.core.metadata.action.BaseGetMetadataOperation$3.run(BaseGetMetadataOperation.java:193)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.mule.api.config.ConfigurationException: Line 3 in XML document from embedded-datasense.xml is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 401; cvc-complex-type.4: Attribute 'name' must appear on element 'db:in-param'. (org.mule.api.lifecycle.InitialisationException)
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:49)
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69)
+	at org.mule.context.DefaultMuleContextFactory$2.configure(DefaultMuleContextFactory.java:108)
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:222)
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:103)
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:62)
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.doGetArtifact(SpringXmlConfigurationMuleArtifactFactory.java:243)
+	... 12 more
+Caused by: org.mule.api.lifecycle.InitialisationException: Line 3 in XML document from embedded-datasense.xml is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 401; cvc-complex-type.4: Attribute 'name' must appear on element 'db:in-param'.
+	at org.mule.registry.AbstractRegistry.initialise(AbstractRegistry.java:112)
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.createSpringRegistry(SpringXmlConfigurationBuilder.java:172)
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.doConfigure(SpringXmlConfigurationBuilder.java:95)
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43)
+	... 18 more
+Caused by: org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 3 in XML document from embedded-datasense.xml is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 401; cvc-complex-type.4: Attribute 'name' must appear on element 'db:in-param'.
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.mule.config.spring.MuleArtifactContext.loadBeanDefinitions(MuleArtifactContext.java:191)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452)
+	at org.mule.config.spring.SpringRegistry.doInitialise(SpringRegistry.java:108)
+	at org.mule.registry.AbstractRegistry.initialise(AbstractRegistry.java:104)
+	... 21 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 401; cvc-complex-type.4: Attribute 'name' must appear on element 'db:in-param'.
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at org.apache.xerces.util.ErrorHandlerWrapper.error(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.reportSchemaError(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.addDefaultAttributes(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.handleStartElement(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.emptyElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 30 more
+
+!ENTRY org.mule.tooling.core 4 0 2015-08-31 16:29:53.869
+!MESSAGE DataSense external metadata retrieval failed for global element db:select
+!STACK 0
+org.mule.common.MuleArtifactFactoryException: There seems to be a problem in your XML configuration. Please fix and retry.
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.doGetArtifact(SpringXmlConfigurationMuleArtifactFactory.java:278)
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.getArtifactForMessageProcessor(SpringXmlConfigurationMuleArtifactFactory.java:66)
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.getArtifactForMessageProcessor(SpringXmlConfigurationMuleArtifactFactory.java:41)
+	at org.mule.tooling.metadata.api.utils.MetadataRetriever.getExternalMetadata(MetadataRetriever.java:55)
+	at org.mule.tooling.ui.modules.core.metadata.MetadataRetrievalManager.getInputOutputMetadata(MetadataRetrievalManager.java:172)
+	at org.mule.tooling.ui.modules.core.metadata.action.GetInputOutputMetadata.executeMetadataRetrieverRunnableAction(GetInputOutputMetadata.java:85)
+	at org.mule.tooling.ui.modules.core.metadata.action.BaseGetMetadataOperation$3$1.call(BaseGetMetadataOperation.java:197)
+	at org.mule.tooling.ui.modules.core.metadata.action.BaseGetMetadataOperation$3$1.call(BaseGetMetadataOperation.java:1)
+	at org.mule.tooling.utils.SilentRunner.run(SilentRunner.java:25)
+	at org.mule.tooling.core.StudioDesignContextRunner.runSilentWithMuleProject(StudioDesignContextRunner.java:17)
+	at org.mule.tooling.core.StudioDesignContextRunner.runSilentWithMuleProject(StudioDesignContextRunner.java:37)
+	at org.mule.tooling.ui.modules.core.metadata.action.BaseGetMetadataOperation$3.run(BaseGetMetadataOperation.java:193)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.mule.api.config.ConfigurationException: Line 3 in XML document from embedded-datasense.xml is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 401; cvc-complex-type.4: Attribute 'name' must appear on element 'db:in-param'. (org.mule.api.lifecycle.InitialisationException)
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:49)
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69)
+	at org.mule.context.DefaultMuleContextFactory$2.configure(DefaultMuleContextFactory.java:108)
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:222)
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:103)
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:62)
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.doGetArtifact(SpringXmlConfigurationMuleArtifactFactory.java:243)
+	... 12 more
+Caused by: org.mule.api.lifecycle.InitialisationException: Line 3 in XML document from embedded-datasense.xml is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 401; cvc-complex-type.4: Attribute 'name' must appear on element 'db:in-param'.
+	at org.mule.registry.AbstractRegistry.initialise(AbstractRegistry.java:112)
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.createSpringRegistry(SpringXmlConfigurationBuilder.java:172)
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.doConfigure(SpringXmlConfigurationBuilder.java:95)
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43)
+	... 18 more
+Caused by: org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 3 in XML document from embedded-datasense.xml is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 401; cvc-complex-type.4: Attribute 'name' must appear on element 'db:in-param'.
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.mule.config.spring.MuleArtifactContext.loadBeanDefinitions(MuleArtifactContext.java:191)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452)
+	at org.mule.config.spring.SpringRegistry.doInitialise(SpringRegistry.java:108)
+	at org.mule.registry.AbstractRegistry.initialise(AbstractRegistry.java:104)
+	... 21 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 401; cvc-complex-type.4: Attribute 'name' must appear on element 'db:in-param'.
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at org.apache.xerces.util.ErrorHandlerWrapper.error(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.reportSchemaError(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.addDefaultAttributes(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.handleStartElement(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.emptyElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 30 more
+
+!ENTRY org.mule.tooling.core 4 0 2015-08-31 16:42:19.805
+!MESSAGE DataSense external metadata retrieval failed for global element db:select
+!STACK 0
+org.mule.common.MuleArtifactFactoryException: There seems to be a problem in your XML configuration. Please fix and retry.
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.doGetArtifact(SpringXmlConfigurationMuleArtifactFactory.java:278)
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.getArtifactForMessageProcessor(SpringXmlConfigurationMuleArtifactFactory.java:66)
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.getArtifactForMessageProcessor(SpringXmlConfigurationMuleArtifactFactory.java:41)
+	at org.mule.tooling.metadata.api.utils.MetadataRetriever.getExternalMetadata(MetadataRetriever.java:55)
+	at org.mule.tooling.ui.modules.core.metadata.MetadataRetrievalManager.getInputOutputMetadata(MetadataRetrievalManager.java:172)
+	at org.mule.tooling.ui.modules.core.metadata.action.GetInputOutputMetadata.executeMetadataRetrieverRunnableAction(GetInputOutputMetadata.java:85)
+	at org.mule.tooling.ui.modules.core.metadata.action.BaseGetMetadataOperation$3$1.call(BaseGetMetadataOperation.java:197)
+	at org.mule.tooling.ui.modules.core.metadata.action.BaseGetMetadataOperation$3$1.call(BaseGetMetadataOperation.java:1)
+	at org.mule.tooling.utils.SilentRunner.run(SilentRunner.java:25)
+	at org.mule.tooling.core.StudioDesignContextRunner.runSilentWithMuleProject(StudioDesignContextRunner.java:17)
+	at org.mule.tooling.core.StudioDesignContextRunner.runSilentWithMuleProject(StudioDesignContextRunner.java:37)
+	at org.mule.tooling.ui.modules.core.metadata.action.BaseGetMetadataOperation$3.run(BaseGetMetadataOperation.java:193)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.mule.api.config.ConfigurationException: Error creating bean with name 'flow-1934817613': Cannot create inner bean '(inner bean)#2129a17e' of type [org.mule.module.db.internal.processor.SelectMessageProcessor] while setting bean property 'messageProcessors' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#2129a17e': Cannot create inner bean '(inner bean)#c5e1342' of type [org.mule.module.db.internal.config.resolver.query.QueryResolverFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#c5e1342': Cannot create inner bean '(inner bean)#74425865' of type [org.mule.module.db.internal.domain.query.Query] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#74425865': Cannot create inner bean '(inner bean)#2fb98a84' of type [org.mule.module.db.internal.config.domain.query.ParameterizedQueryTemplateFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName] (org.mule.api.lifecycle.InitialisationException)
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:49)
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69)
+	at org.mule.context.DefaultMuleContextFactory$2.configure(DefaultMuleContextFactory.java:108)
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:222)
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:103)
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:62)
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.doGetArtifact(SpringXmlConfigurationMuleArtifactFactory.java:243)
+	... 12 more
+Caused by: org.mule.api.lifecycle.InitialisationException: Error creating bean with name 'flow-1934817613': Cannot create inner bean '(inner bean)#2129a17e' of type [org.mule.module.db.internal.processor.SelectMessageProcessor] while setting bean property 'messageProcessors' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#2129a17e': Cannot create inner bean '(inner bean)#c5e1342' of type [org.mule.module.db.internal.config.resolver.query.QueryResolverFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#c5e1342': Cannot create inner bean '(inner bean)#74425865' of type [org.mule.module.db.internal.domain.query.Query] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#74425865': Cannot create inner bean '(inner bean)#2fb98a84' of type [org.mule.module.db.internal.config.domain.query.ParameterizedQueryTemplateFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName]
+	at org.mule.registry.AbstractRegistry.initialise(AbstractRegistry.java:112)
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.createSpringRegistry(SpringXmlConfigurationBuilder.java:172)
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.doConfigure(SpringXmlConfigurationBuilder.java:95)
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43)
+	... 18 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flow-1934817613': Cannot create inner bean '(inner bean)#2129a17e' of type [org.mule.module.db.internal.processor.SelectMessageProcessor] while setting bean property 'messageProcessors' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#2129a17e': Cannot create inner bean '(inner bean)#c5e1342' of type [org.mule.module.db.internal.config.resolver.query.QueryResolverFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#c5e1342': Cannot create inner bean '(inner bean)#74425865' of type [org.mule.module.db.internal.domain.query.Query] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#74425865': Cannot create inner bean '(inner bean)#2fb98a84' of type [org.mule.module.db.internal.config.domain.query.ParameterizedQueryTemplateFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:129)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:382)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:753)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.mule.config.spring.SpringRegistry.doInitialise(SpringRegistry.java:108)
+	at org.mule.registry.AbstractRegistry.initialise(AbstractRegistry.java:104)
+	... 21 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#2129a17e': Cannot create inner bean '(inner bean)#c5e1342' of type [org.mule.module.db.internal.config.resolver.query.QueryResolverFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#c5e1342': Cannot create inner bean '(inner bean)#74425865' of type [org.mule.module.db.internal.domain.query.Query] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#74425865': Cannot create inner bean '(inner bean)#2fb98a84' of type [org.mule.module.db.internal.config.domain.query.ParameterizedQueryTemplateFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:129)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1042)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299)
+	... 37 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#c5e1342': Cannot create inner bean '(inner bean)#74425865' of type [org.mule.module.db.internal.domain.query.Query] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#74425865': Cannot create inner bean '(inner bean)#2fb98a84' of type [org.mule.module.db.internal.config.domain.query.ParameterizedQueryTemplateFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:129)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1042)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299)
+	... 45 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#74425865': Cannot create inner bean '(inner bean)#2fb98a84' of type [org.mule.module.db.internal.config.domain.query.ParameterizedQueryTemplateFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:129)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1042)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299)
+	... 53 more
+Caused by: org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName]
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:164)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.evaluateBeanDefinitionString(AbstractBeanFactory.java:1365)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.doEvaluate(BeanDefinitionValueResolver.java:255)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate(BeanDefinitionValueResolver.java:228)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:204)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1042)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299)
+	... 61 more
+Caused by: org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName]
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpressions(TemplateAwareExpressionParser.java:135)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseTemplate(TemplateAwareExpressionParser.java:85)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:73)
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:141)
+	... 72 more
+
+!ENTRY org.mule.tooling.core 4 0 2015-08-31 16:42:19.805
+!MESSAGE DataSense external metadata retrieval failed for global element db:select
+!STACK 0
+org.mule.common.MuleArtifactFactoryException: There seems to be a problem in your XML configuration. Please fix and retry.
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.doGetArtifact(SpringXmlConfigurationMuleArtifactFactory.java:278)
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.getArtifactForMessageProcessor(SpringXmlConfigurationMuleArtifactFactory.java:66)
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.getArtifactForMessageProcessor(SpringXmlConfigurationMuleArtifactFactory.java:41)
+	at org.mule.tooling.metadata.api.utils.MetadataRetriever.getExternalMetadata(MetadataRetriever.java:55)
+	at org.mule.tooling.ui.modules.core.metadata.MetadataRetrievalManager.getInputOutputMetadata(MetadataRetrievalManager.java:172)
+	at org.mule.tooling.ui.modules.core.metadata.action.GetInputOutputMetadata.executeMetadataRetrieverRunnableAction(GetInputOutputMetadata.java:85)
+	at org.mule.tooling.ui.modules.core.metadata.action.BaseGetMetadataOperation$3$1.call(BaseGetMetadataOperation.java:197)
+	at org.mule.tooling.ui.modules.core.metadata.action.BaseGetMetadataOperation$3$1.call(BaseGetMetadataOperation.java:1)
+	at org.mule.tooling.utils.SilentRunner.run(SilentRunner.java:25)
+	at org.mule.tooling.core.StudioDesignContextRunner.runSilentWithMuleProject(StudioDesignContextRunner.java:17)
+	at org.mule.tooling.core.StudioDesignContextRunner.runSilentWithMuleProject(StudioDesignContextRunner.java:37)
+	at org.mule.tooling.ui.modules.core.metadata.action.BaseGetMetadataOperation$3.run(BaseGetMetadataOperation.java:193)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.mule.api.config.ConfigurationException: Error creating bean with name 'flow-1934817613': Cannot create inner bean '(inner bean)#2129a17e' of type [org.mule.module.db.internal.processor.SelectMessageProcessor] while setting bean property 'messageProcessors' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#2129a17e': Cannot create inner bean '(inner bean)#c5e1342' of type [org.mule.module.db.internal.config.resolver.query.QueryResolverFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#c5e1342': Cannot create inner bean '(inner bean)#74425865' of type [org.mule.module.db.internal.domain.query.Query] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#74425865': Cannot create inner bean '(inner bean)#2fb98a84' of type [org.mule.module.db.internal.config.domain.query.ParameterizedQueryTemplateFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName] (org.mule.api.lifecycle.InitialisationException)
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:49)
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69)
+	at org.mule.context.DefaultMuleContextFactory$2.configure(DefaultMuleContextFactory.java:108)
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:222)
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:103)
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:62)
+	at org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.doGetArtifact(SpringXmlConfigurationMuleArtifactFactory.java:243)
+	... 12 more
+Caused by: org.mule.api.lifecycle.InitialisationException: Error creating bean with name 'flow-1934817613': Cannot create inner bean '(inner bean)#2129a17e' of type [org.mule.module.db.internal.processor.SelectMessageProcessor] while setting bean property 'messageProcessors' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#2129a17e': Cannot create inner bean '(inner bean)#c5e1342' of type [org.mule.module.db.internal.config.resolver.query.QueryResolverFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#c5e1342': Cannot create inner bean '(inner bean)#74425865' of type [org.mule.module.db.internal.domain.query.Query] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#74425865': Cannot create inner bean '(inner bean)#2fb98a84' of type [org.mule.module.db.internal.config.domain.query.ParameterizedQueryTemplateFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName]
+	at org.mule.registry.AbstractRegistry.initialise(AbstractRegistry.java:112)
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.createSpringRegistry(SpringXmlConfigurationBuilder.java:172)
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.doConfigure(SpringXmlConfigurationBuilder.java:95)
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43)
+	... 18 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flow-1934817613': Cannot create inner bean '(inner bean)#2129a17e' of type [org.mule.module.db.internal.processor.SelectMessageProcessor] while setting bean property 'messageProcessors' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#2129a17e': Cannot create inner bean '(inner bean)#c5e1342' of type [org.mule.module.db.internal.config.resolver.query.QueryResolverFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#c5e1342': Cannot create inner bean '(inner bean)#74425865' of type [org.mule.module.db.internal.domain.query.Query] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#74425865': Cannot create inner bean '(inner bean)#2fb98a84' of type [org.mule.module.db.internal.config.domain.query.ParameterizedQueryTemplateFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:129)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:382)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:753)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.mule.config.spring.SpringRegistry.doInitialise(SpringRegistry.java:108)
+	at org.mule.registry.AbstractRegistry.initialise(AbstractRegistry.java:104)
+	... 21 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#2129a17e': Cannot create inner bean '(inner bean)#c5e1342' of type [org.mule.module.db.internal.config.resolver.query.QueryResolverFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#c5e1342': Cannot create inner bean '(inner bean)#74425865' of type [org.mule.module.db.internal.domain.query.Query] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#74425865': Cannot create inner bean '(inner bean)#2fb98a84' of type [org.mule.module.db.internal.config.domain.query.ParameterizedQueryTemplateFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:129)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1042)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299)
+	... 37 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#c5e1342': Cannot create inner bean '(inner bean)#74425865' of type [org.mule.module.db.internal.domain.query.Query] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#74425865': Cannot create inner bean '(inner bean)#2fb98a84' of type [org.mule.module.db.internal.config.domain.query.ParameterizedQueryTemplateFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:129)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1042)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299)
+	... 45 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#74425865': Cannot create inner bean '(inner bean)#2fb98a84' of type [org.mule.module.db.internal.config.domain.query.ParameterizedQueryTemplateFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:129)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1042)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299)
+	... 53 more
+Caused by: org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName]
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:164)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.evaluateBeanDefinitionString(AbstractBeanFactory.java:1365)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.doEvaluate(BeanDefinitionValueResolver.java:255)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate(BeanDefinitionValueResolver.java:228)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:204)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1042)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299)
+	... 61 more
+Caused by: org.springframework.expression.ParseException: Expression 'SELECT * FROM Customer WHERE company_name = #{#[message.inboundProperties.'http.query.params'.companyName]' @ 44: No ending suffix '}' for expression starting at character 44: #{#[message.inboundProperties.'http.query.params'.companyName]
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpressions(TemplateAwareExpressionParser.java:135)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseTemplate(TemplateAwareExpressionParser.java:85)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:73)
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:141)
+	... 72 more

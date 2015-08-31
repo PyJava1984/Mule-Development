@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.munit.launchconfig">
+<stringAttribute key="Mpath" value="/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/Mule-ActiveMq-Messaging/src/test/munit/new-test-suite.xml"/>
+<listAttribute key="mule-project-names">
+<listEntry value="ActiveMQ-Messaging"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/ActiveMQ-Messaging"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="new-test-suite.xml"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ActiveMQ-Messaging"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.library.path="/>
+<stringAttribute key="resource" value="new-test-suite.xml"/>
+<stringAttribute key="test_name" value="new-test-suite-scopes-demoFlowTest"/>
+</launchConfiguration>

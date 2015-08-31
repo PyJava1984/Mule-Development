@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonAutoDetect"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.ggl.mule.ProductOrder"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="com.google.common.cache.Cache"/>
+<fullyQualifiedTypeName name="org.mule.api.lifecycle.Callable"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.SuppressAjWarnings"/>
+</qualifiedTypeNameHistroy>

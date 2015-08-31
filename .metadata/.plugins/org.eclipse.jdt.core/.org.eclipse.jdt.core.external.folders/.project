@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.org.eclipse.jdt.core.external.folders</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>.link0</name>
+			<type>2</type>
+			<location>/Users/Gary2013/AnypointStudio-3.7-8-18/AnypointStudio/plugins/org.mule.tooling.server.3.7.0.ee_5.2.0.201507011951/mule/lib/mule/per-app</location>
+		</link>
+	</linkedResources>
+</projectDescription>

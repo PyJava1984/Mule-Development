@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.7.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/current/mule-jms.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <jms:activemq-connector name="Active_MQ" brokerURL="tcp://localhost:61616" validateConnections="true" doc:name="Active MQ">
+        <reconnect frequency="15000" count="10"/>
+    </jms:activemq-connector>
+    <configuration defaultExceptionStrategy-ref="globlal_Exception_Strategy" doc:name="Configuration"/>
+    <db:mysql-config name="MySQL_Configuration" host="localhost" port="3306" user="mule" password="mule" database="dataformule" doc:name="MySQL Configuration"/>
+    <flow name="Mule-Use-Case-A-MainFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/json-jms" allowedMethods="GET,POST" doc:name="HTTP"/>
+        <set-variable variableName="cName" value="#[message.inboundProperties.'http.query.params'.companyName]" doc:name="Variable"/>
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:dynamic-query><![CDATA[SELECT * FROM Customer WHERE company_name=#[message.inboundProperties.'http.query.params'.companyName];]]></db:dynamic-query>
+        </db:select>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+        <json:json-to-object-transformer returnClass="java.util.List" doc:name="JSON to Object"/>
+        <flow-ref name="activemq-messagiing-send-Sub_Flow" doc:name="activemq-messagiing-send-Sub_Flow"/>
+        <set-payload value="{&quot;count&quot;: #[flowVars.messageCounter]}" doc:name="Set Payload"/>
+        <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+        <choice-exception-strategy doc:name="Choice Exception Strategy">
+            <catch-exception-strategy when="#[exception.causedBy(org.mule.api.transformer.TransformerException)]" doc:name="Catch Exception Strategy">
+                <set-payload value="#[payload]" doc:name="Set Payload"/>
+                <jms:outbound-endpoint queue="Dead.Letter.Invalid.Data" connector-ref="Active_MQ" doc:name="JMS"/>
+            </catch-exception-strategy>
+            <catch-exception-strategy when="#[exception.causedBy(java.sql.SQLException)]" doc:name="Catch Database Connection Exception">
+                <set-payload value="#[payload]" doc:name="Set Payload"/>
+                <jms:outbound-endpoint queue="Dead.Letter.Invalid.Data" connector-ref="Active_MQ" doc:name="JMS"/>
+            </catch-exception-strategy>
+            <catch-exception-strategy when="#[exception.causedBy(java.lang.Exception)]" doc:name="Catch ActiveMQ Connection Exception">
+                <set-payload value="#[payload]" doc:name="Set Payload"/>
+                <set-payload value="Cannot connect to ActiveMQ" doc:name="Set Payload"/>
+            </catch-exception-strategy>
+        </choice-exception-strategy>
+    </flow>
+    <sub-flow name="activemq-messagiing-send-Sub_Flow">
+        <foreach collection="#[payload]" doc:name="Loop List Of Messages">
+            <logger message="#[payload]" level="INFO" doc:name="Log Single message"/>
+            <json:object-to-json-transformer doc:name="Object to JSON"/>
+            <set-variable variableName="messageCounter" value="#[flowVars.counter]" doc:name="Set Count Variable"/>
+            <jms:outbound-endpoint queue="Customer.Information" connector-ref="Active_MQ" doc:name="Send To JMS"/>
+        </foreach>
+    </sub-flow>
+    <catch-exception-strategy name="globlal_Exception_Strategy">
+        <set-payload value="#[payload]" doc:name="Set Payload"/>
+        <logger message="GLOBAL Exception Handller: #[payload]" level="INFO" doc:name="Logger"/>
+    </catch-exception-strategy>
+</mule>

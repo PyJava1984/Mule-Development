@@ -1,0 +1,220 @@
+INFO  2015-08-21 20:22:23,896 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'dataweave-intro'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-08-21 20:22:23,994 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2015-08-21 20:22:24,092 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2015-08-21 20:22:24,220 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2015-08-21 20:22:24,221 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.7)
+INFO  2015-08-21 20:22:24,272 [main] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@19da6521: startup date [Fri Aug 21 20:22:24 CDT 2015]; root of context hierarchy
+INFO  2015-08-21 20:22:25,363 [main] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2015-08-21 20:22:26,062 [main] org.mule.module.ognl.expression.OgnlExpressionEvaluator: OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+INFO  2015-08-21 20:22:26,445 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2015-08-21 20:22:26,449 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: dataweave-introFlow
+INFO  2015-08-21 20:22:26,449 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@75ff88d2
+INFO  2015-08-21 20:22:26,475 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: dataweave-introFlow.stage1
+INFO  2015-08-21 20:22:26,487 [main] org.mule.component.ComponentLifecycleManager: Initialising component: component.1246052888
+INFO  2015-08-21 20:22:26,506 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/dataweave-intro/queue-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/dataweave-intro/queue-tx-log/tx2.log
+INFO  2015-08-21 20:22:26,512 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/dataweave-intro/queue-xa-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/dataweave-intro/queue-xa-tx-log/tx2.log
+INFO  2015-08-21 20:22:26,732 [main] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/dataweave-intro/dataweave-intro.xml'}]"
+INFO  2015-08-21 20:22:26,732 [main] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/dataweave-intro/dataweave-intro.xml'}]"
+INFO  2015-08-21 20:22:26,733 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'dataweave-intro'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-08-21 20:22:26,736 [main] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2015-08-21 20:22:26,736 [main] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2015-08-21 20:22:26,789 [main] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2015-08-21 20:22:26,796 [main] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-08-21 20:22:26,798 [main] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2015-08-21 20:22:26,800 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: dataweave-introFlow
+INFO  2015-08-21 20:22:26,801 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: dataweave-introFlow.stage1
+INFO  2015-08-21 20:22:26,823 [main] org.mule.component.ComponentLifecycleManager: Starting component: component.1246052888
+INFO  2015-08-21 20:22:26,874 [main] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2015-08-21 20:22:26,930 [main] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: dataweave-intro                                       *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+ERROR 2015-08-21 20:22:53,865 [[dataweave-intro].HTTP_Listener_Configuration.worker.01] org.mule.exception.DefaultMessagingExceptionStrategy: 
+********************************************************************************
+Message               : Object "java.lang.String" not of correct type. It must be of type "{interface java.lang.Iterable,interface java.util.Iterator,interface org.mule.routing.MessageSequence,interface java.util.Collection}" (java.lang.IllegalArgumentException). Message payload is of type: String
+Type                  : org.mule.api.MessagingException
+Code                  : MULE_ERROR--2
+Payload               : Gary Liu
+JavaDoc               : http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/api/MessagingException.html
+********************************************************************************
+Exception stack is:
+1. Object "java.lang.String" not of correct type. It must be of type "{interface java.lang.Iterable,interface java.util.Iterator,interface org.mule.routing.MessageSequence,interface java.util.Collection}" (java.lang.IllegalArgumentException)
+  org.mule.util.collection.EventToMessageSequenceSplittingStrategy:64 (null)
+2. Object "java.lang.String" not of correct type. It must be of type "{interface java.lang.Iterable,interface java.util.Iterator,interface org.mule.routing.MessageSequence,interface java.util.Collection}" (java.lang.IllegalArgumentException). Message payload is of type: String (org.mule.api.MessagingException)
+  org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor:32 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/api/MessagingException.html)
+********************************************************************************
+Root Exception stack trace:
+java.lang.IllegalArgumentException: Object "java.lang.String" not of correct type. It must be of type "{interface java.lang.Iterable,interface java.util.Iterator,interface org.mule.routing.MessageSequence,interface java.util.Collection}"
+	at org.mule.util.collection.EventToMessageSequenceSplittingStrategy.split(EventToMessageSequenceSplittingStrategy.java:64)
+	at org.mule.util.collection.EventToMessageSequenceSplittingStrategy.split(EventToMessageSequenceSplittingStrategy.java:25)
+	at org.mule.routing.CollectionSplitter.splitMessageIntoSequence(CollectionSplitter.java:29)
+	at org.mule.routing.Foreach$CollectionMapSplitter.splitMessageIntoSequence(Foreach.java:252)
+	at org.mule.routing.outbound.AbstractMessageSequenceSplitter.process(AbstractMessageSequenceSplitter.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.routing.Foreach.process(Foreach.java:93)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:102)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:58)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.executio...
+********************************************************************************
+
+INFO  2015-08-21 20:22:54,105 [[dataweave-intro].HTTP_Listener_Configuration.worker.01] org.mule.module.http.internal.listener.HttpListenerRegistry: No listener found for request: (GET)/favicon.ico
+INFO  2015-08-21 20:22:54,105 [[dataweave-intro].HTTP_Listener_Configuration.worker.01] org.mule.module.http.internal.listener.HttpListenerRegistry: Available listeners are: [(*)/echo/]
+INFO  2015-08-21 20:24:15,987 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'dataweave-intro'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-08-21 20:24:16,093 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2015-08-21 20:24:16,199 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2015-08-21 20:24:16,335 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2015-08-21 20:24:16,335 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.7)
+INFO  2015-08-21 20:24:16,394 [main] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@5b988d3f: startup date [Fri Aug 21 20:24:16 CDT 2015]; root of context hierarchy
+INFO  2015-08-21 20:24:17,596 [main] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2015-08-21 20:24:18,436 [main] org.mule.module.ognl.expression.OgnlExpressionEvaluator: OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+INFO  2015-08-21 20:24:18,880 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2015-08-21 20:24:18,886 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: dataweave-introFlow
+INFO  2015-08-21 20:24:18,886 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@348d62d4
+INFO  2015-08-21 20:24:18,921 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: dataweave-introFlow.stage1
+INFO  2015-08-21 20:24:18,932 [main] org.mule.component.ComponentLifecycleManager: Initialising component: component.1752661711
+INFO  2015-08-21 20:24:18,954 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/dataweave-intro/queue-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/dataweave-intro/queue-tx-log/tx2.log
+INFO  2015-08-21 20:24:18,962 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/dataweave-intro/queue-xa-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/dataweave-intro/queue-xa-tx-log/tx2.log
+INFO  2015-08-21 20:24:19,171 [main] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/dataweave-intro/dataweave-intro.xml'}]"
+INFO  2015-08-21 20:24:19,172 [main] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/dataweave-intro/dataweave-intro.xml'}]"
+INFO  2015-08-21 20:24:19,173 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'dataweave-intro'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-08-21 20:24:19,176 [main] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2015-08-21 20:24:19,176 [main] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2015-08-21 20:24:19,221 [main] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2015-08-21 20:24:19,227 [main] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-08-21 20:24:19,229 [main] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2015-08-21 20:24:19,232 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: dataweave-introFlow
+INFO  2015-08-21 20:24:19,232 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: dataweave-introFlow.stage1
+INFO  2015-08-21 20:24:19,238 [main] org.mule.component.ComponentLifecycleManager: Starting component: component.1752661711
+INFO  2015-08-21 20:24:19,293 [main] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2015-08-21 20:24:19,352 [main] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: dataweave-intro                                       *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+ERROR 2015-08-21 20:25:12,023 [[dataweave-intro].HTTP_Listener_Configuration.worker.01] org.mule.exception.DefaultMessagingExceptionStrategy: 
+********************************************************************************
+Message               : Object "java.lang.String" not of correct type. It must be of type "{interface java.lang.Iterable,interface java.util.Iterator,interface org.mule.routing.MessageSequence,interface java.util.Collection}" (java.lang.IllegalArgumentException). Message payload is of type: String
+Type                  : org.mule.api.MessagingException
+Code                  : MULE_ERROR--2
+Payload               : Gary Liu
+JavaDoc               : http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/api/MessagingException.html
+********************************************************************************
+Exception stack is:
+1. Object "java.lang.String" not of correct type. It must be of type "{interface java.lang.Iterable,interface java.util.Iterator,interface org.mule.routing.MessageSequence,interface java.util.Collection}" (java.lang.IllegalArgumentException)
+  org.mule.util.collection.EventToMessageSequenceSplittingStrategy:64 (null)
+2. Object "java.lang.String" not of correct type. It must be of type "{interface java.lang.Iterable,interface java.util.Iterator,interface org.mule.routing.MessageSequence,interface java.util.Collection}" (java.lang.IllegalArgumentException). Message payload is of type: String (org.mule.api.MessagingException)
+  org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor:32 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/api/MessagingException.html)
+********************************************************************************
+Root Exception stack trace:
+java.lang.IllegalArgumentException: Object "java.lang.String" not of correct type. It must be of type "{interface java.lang.Iterable,interface java.util.Iterator,interface org.mule.routing.MessageSequence,interface java.util.Collection}"
+	at org.mule.util.collection.EventToMessageSequenceSplittingStrategy.split(EventToMessageSequenceSplittingStrategy.java:64)
+	at org.mule.util.collection.EventToMessageSequenceSplittingStrategy.split(EventToMessageSequenceSplittingStrategy.java:25)
+	at org.mule.routing.CollectionSplitter.splitMessageIntoSequence(CollectionSplitter.java:29)
+	at org.mule.routing.Foreach$CollectionMapSplitter.splitMessageIntoSequence(Foreach.java:252)
+	at org.mule.routing.outbound.AbstractMessageSequenceSplitter.process(AbstractMessageSequenceSplitter.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.routing.Foreach.process(Foreach.java:93)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:102)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:58)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.executio...
+********************************************************************************
+

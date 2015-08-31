@@ -1,0 +1,48 @@
+INFO  2015-08-22 05:38:29,517 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'dataweave-intro'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-08-22 05:38:29,624 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2015-08-22 05:38:29,732 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2015-08-22 05:38:29,872 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2015-08-22 05:38:29,872 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.7)
+INFO  2015-08-22 05:38:29,937 [main] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@8dcc89a: startup date [Sat Aug 22 05:38:29 CDT 2015]; root of context hierarchy
+INFO  2015-08-22 05:38:31,084 [main] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2015-08-22 05:38:31,861 [main] org.mule.module.ognl.expression.OgnlExpressionEvaluator: OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+INFO  2015-08-22 05:38:32,289 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2015-08-22 05:38:32,294 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: dataweave-introFlow
+INFO  2015-08-22 05:38:32,294 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@38176916
+INFO  2015-08-22 05:38:32,327 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: dataweave-introFlow.stage1
+INFO  2015-08-22 05:38:32,349 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/dataweave-intro/queue-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/dataweave-intro/queue-tx-log/tx2.log
+INFO  2015-08-22 05:38:32,360 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/dataweave-intro/queue-xa-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/dataweave-intro/queue-xa-tx-log/tx2.log
+INFO  2015-08-22 05:38:32,572 [main] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/dataweave-intro/dataweave-intro.xml'}]"
+INFO  2015-08-22 05:38:32,572 [main] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/dataweave-intro/dataweave-intro.xml'}]"
+INFO  2015-08-22 05:38:32,573 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'dataweave-intro'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-08-22 05:38:32,576 [main] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2015-08-22 05:38:32,576 [main] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2015-08-22 05:38:32,626 [main] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2015-08-22 05:38:32,633 [main] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-08-22 05:38:32,635 [main] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2015-08-22 05:38:32,638 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: dataweave-introFlow
+INFO  2015-08-22 05:38:32,639 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: dataweave-introFlow.stage1
+INFO  2015-08-22 05:38:32,685 [main] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2015-08-22 05:38:32,736 [main] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: dataweave-intro                                       *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2015-08-22 05:39:49,758 [[dataweave-intro].HTTP_Listener_Configuration.worker.01] org.mule.module.http.internal.listener.HttpListenerRegistry: No listener found for request: (POST)/json-jms
+INFO  2015-08-22 05:39:49,758 [[dataweave-intro].HTTP_Listener_Configuration.worker.01] org.mule.module.http.internal.listener.HttpListenerRegistry: Available listeners are: [(*)/echo/]
