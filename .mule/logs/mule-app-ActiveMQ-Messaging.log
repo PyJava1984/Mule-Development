@@ -436,3 +436,1336 @@ INFO  2015-09-01 10:58:26,576 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.
 INFO  2015-09-01 10:58:26,584 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: {phone=999-888-7778, contact_name=Contact_AB4, company_name=Company_A, company_address=Address_AB4, id=124}
 INFO  2015-09-01 10:58:26,591 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: {phone=999-888-7778, contact_name=Contact_AB5, company_name=Company_A, company_address=Address_AB5, id=125}
 WARN  2015-09-01 10:59:55,114 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.routing.ExpressionSplitter: Splitter returned no results. If this is not expected, please check your split expression
+INFO  2015-09-01 15:28:02,526 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:28:02,527 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:28:02,528 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 15:28:02,631 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2015-09-01 15:28:02,633 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping connector: Active_MQ
+INFO  2015-09-01 15:28:02,633 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping: 'Active_MQ.dispatcher.1440273081'. Object is: EeJmsMessageDispatcher
+INFO  2015-09-01 15:28:02,634 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing: 'Active_MQ.dispatcher.1440273081'. Object is: EeJmsMessageDispatcher
+INFO  2015-09-01 15:28:02,635 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081
+INFO  2015-09-01 15:28:02,636 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2015-09-01 15:28:02,636 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2015-09-01 15:28:02,639 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'ActiveMQ-Messaging'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:28:02,639 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2015-09-01 15:28:02,639 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:28:02,639 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 15:28:02,641 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2015-09-01 15:28:02,654 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=stop
+  this=537519d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 15:28:02,655 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing connector: Active_MQ
+INFO  2015-09-01 15:28:02,736 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@28c08f61: startup date [Tue Sep 01 10:53:56 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 15:28:02,857 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "ActiveMQ-Messaging" shut down normally on: 9/1/15     *
+* 3:28 PM                                                            *
+* Up for: 0 days, 4 hours, 34 mins, 5.997 sec                        *
+**********************************************************************
+INFO  2015-09-01 15:28:03,176 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ActiveMQ-Messaging'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:28:03,183 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2015-09-01 15:28:03,188 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2015-09-01 15:28:03,208 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2015-09-01 15:28:03,209 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.7)
+INFO  2015-09-01 15:28:03,212 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@666a6abf: startup date [Tue Sep 01 15:28:03 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 15:28:03,526 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2015-09-01 15:28:03,567 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 15:28:03,567 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 15:28:03,568 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 15:28:03,568 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+INFO  2015-09-01 15:28:03,729 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising connector: Active_MQ
+INFO  2015-09-01 15:28:03,765 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2015-09-01 15:28:03,769 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:28:03,770 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2f2597d5
+INFO  2015-09-01 15:28:03,770 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4d133921
+INFO  2015-09-01 15:28:03,770 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@290bcd0f
+INFO  2015-09-01 15:28:03,771 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@45c3a8d6
+INFO  2015-09-01 15:28:03,777 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 15:28:03,779 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Initialising component: component.1430987059
+INFO  2015-09-01 15:28:04,602 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx2.log
+INFO  2015-09-01 15:28:04,603 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx2.log
+INFO  2015-09-01 15:28:04,633 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 15:28:04,634 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 15:28:04,634 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:28:04,636 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2015-09-01 15:28:04,637 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2015-09-01 15:28:04,650 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2015-09-01 15:28:05,052 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=71ef47fd
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 15:28:05,052 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=71ef47fd
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 15:28:05,052 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting connector: Active_MQ
+INFO  2015-09-01 15:28:05,058 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:28:05,058 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2015-09-01 15:28:05,059 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:28:05,059 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 15:28:05,063 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Starting component: component.1430987059
+INFO  2015-09-01 15:28:05,077 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2015-09-01 15:28:05,084 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.AbstractJmxAgent: Registered Connector Service with name Mule.ActiveMQ-Messaging:type=Connector,name="Active.MQ"
+INFO  2015-09-01 15:28:05,085 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: ActiveMQ-Messaging                                    *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2015-09-01 15:32:15,247 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:32:15,248 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:32:15,248 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 15:32:15,447 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Stopping component: component.1430987059
+INFO  2015-09-01 15:32:15,449 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2015-09-01 15:32:15,451 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping connector: Active_MQ
+INFO  2015-09-01 15:32:15,452 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081
+INFO  2015-09-01 15:32:15,453 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2015-09-01 15:32:15,453 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2015-09-01 15:32:15,455 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'ActiveMQ-Messaging'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:32:15,455 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2015-09-01 15:32:15,456 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:32:15,456 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 15:32:15,457 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Disposing component: component.1430987059
+INFO  2015-09-01 15:32:15,458 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2015-09-01 15:32:15,475 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=stop
+  this=71ef47fd
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 15:32:15,476 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing connector: Active_MQ
+INFO  2015-09-01 15:32:15,509 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@666a6abf: startup date [Tue Sep 01 15:28:03 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 15:32:15,681 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "ActiveMQ-Messaging" shut down normally on: 9/1/15     *
+* 3:32 PM                                                            *
+* Up for: 0 days, 0 hours, 4 mins, 11.46 sec                         *
+**********************************************************************
+INFO  2015-09-01 15:32:16,027 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ActiveMQ-Messaging'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:32:16,035 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2015-09-01 15:32:16,041 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2015-09-01 15:32:16,060 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2015-09-01 15:32:16,060 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.7)
+INFO  2015-09-01 15:32:16,064 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@30b07967: startup date [Tue Sep 01 15:32:16 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 15:32:16,404 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2015-09-01 15:32:16,458 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 15:32:16,459 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 15:32:16,459 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 15:32:16,459 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+INFO  2015-09-01 15:32:16,621 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising connector: Active_MQ
+INFO  2015-09-01 15:32:16,666 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2015-09-01 15:32:16,670 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:32:16,670 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4eb14055
+INFO  2015-09-01 15:32:16,671 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@56f6b4cf
+INFO  2015-09-01 15:32:16,671 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@5ed8aea3
+INFO  2015-09-01 15:32:16,672 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@1a492938
+INFO  2015-09-01 15:32:16,672 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@39312903
+INFO  2015-09-01 15:32:16,682 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 15:32:16,682 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Initialising component: component.1184655575
+INFO  2015-09-01 15:32:16,738 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx2.log
+INFO  2015-09-01 15:32:16,739 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx2.log
+INFO  2015-09-01 15:32:16,793 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 15:32:16,793 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 15:32:16,793 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:32:16,795 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2015-09-01 15:32:16,796 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2015-09-01 15:32:16,816 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2015-09-01 15:32:17,223 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=38125f37
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 15:32:17,223 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=38125f37
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 15:32:17,223 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting connector: Active_MQ
+INFO  2015-09-01 15:32:17,228 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:32:17,229 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2015-09-01 15:32:17,230 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:32:17,230 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 15:32:17,233 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Starting component: component.1184655575
+INFO  2015-09-01 15:32:17,245 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2015-09-01 15:32:17,251 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.AbstractJmxAgent: Registered Connector Service with name Mule.ActiveMQ-Messaging:type=Connector,name="Active.MQ"
+INFO  2015-09-01 15:32:17,254 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: ActiveMQ-Messaging                                    *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2015-09-01 15:36:42,417 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:36:42,418 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:36:42,418 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: Mule-Use-Case-A-MainFlow.stage1
+ERROR 2015-09-01 15:36:42,441 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.exception.CatchMessagingExceptionStrategy: 
+********************************************************************************
+Message               : Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.1184655575}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.1184655575}. Message payload is of type: NullPayload
+Type                  : org.mule.component.ComponentException
+Code                  : MULE_ERROR--2
+Payload               : {NullPayload}
+JavaDoc               : http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/component/ComponentException.html
+********************************************************************************
+Exception stack is:
+1. Paramenter Not Acceptable (java.lang.IllegalArgumentException)
+  sun.reflect.NativeConstructorAccessorImpl:-2 (null)
+2. java.lang.IllegalArgumentException: Paramenter Not Acceptable (javax.script.ScriptException)
+  org.codehaus.groovy.jsr223.GroovyScriptEngineImpl:348 (http://java.sun.com/j2ee/sdk_1.3/techdocs/api/javax/script/ScriptException.html)
+3. Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.1184655575}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.1184655575}. Message payload is of type: NullPayload (org.mule.component.ComponentException)
+  org.mule.component.AbstractComponent:142 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/component/ComponentException.html)
+********************************************************************************
+Root Exception stack trace:
+java.lang.IllegalArgumentException: Paramenter Not Acceptable
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:102)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:182)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+	at Script2.run(Script2.groovy:1)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:345)
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:41)
+	at javax.script.CompiledScript.eval(CompiledScript.java:92)
+	at org.mule.module.scripting.component.Scriptable.runScript(Scriptable.java:287)
+	at org.mule.module.scripting.component.ScriptComponent.doInvoke(ScriptComponent.java:78)
+	at org.mule.component.AbstractComponent.invokeInternal(AbstractComponent.java:120)
+	at org.mule.component.AbstractComponent.access$000(AbstractComponent.java:55)
+	at org.mule.component.AbstractComponent$1$1.process(AbstractComponent.java:236)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.component.AbstractComponent.process(AbstractComponent.java:154)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.routing.AbstractSelectiveRouter.processEventWithProcessor(AbstractSelectiveRouter.java:303)
+	at org.mule.routing.AbstractSelectiveRouter.routeWithProcessors(AbstractSelectiveRouter.java:293)
+	at org.mule.routing.AbstractSelectiveRouter.routeWithProcessor(AbstractSelectiveRouter.java:283)
+	at org.mule.routing.AbstractSelectiveRouter.process(AbstractSelectiveRouter.java:198)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProces...
+********************************************************************************
+
+INFO  2015-09-01 15:36:42,445 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: Unexpected Exception: null
+INFO  2015-09-01 15:36:42,516 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Stopping component: component.1184655575
+INFO  2015-09-01 15:36:42,517 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2015-09-01 15:36:42,519 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping connector: Active_MQ
+INFO  2015-09-01 15:36:42,520 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081
+INFO  2015-09-01 15:36:42,521 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2015-09-01 15:36:42,522 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2015-09-01 15:36:42,524 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'ActiveMQ-Messaging'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:36:42,524 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2015-09-01 15:36:42,524 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:36:42,525 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 15:36:42,525 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Disposing component: component.1184655575
+INFO  2015-09-01 15:36:42,526 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2015-09-01 15:36:42,540 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=stop
+  this=38125f37
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 15:36:42,541 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing connector: Active_MQ
+INFO  2015-09-01 15:36:42,561 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@30b07967: startup date [Tue Sep 01 15:32:16 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 15:36:42,746 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "ActiveMQ-Messaging" shut down normally on: 9/1/15     *
+* 3:36 PM                                                            *
+* Up for: 0 days, 0 hours, 4 mins, 25.952 sec                        *
+**********************************************************************
+INFO  2015-09-01 15:36:43,051 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ActiveMQ-Messaging'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:36:43,058 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2015-09-01 15:36:43,062 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2015-09-01 15:36:43,080 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2015-09-01 15:36:43,080 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.7)
+INFO  2015-09-01 15:36:43,082 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@375c94c6: startup date [Tue Sep 01 15:36:43 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 15:36:43,326 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2015-09-01 15:36:43,365 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 15:36:43,365 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 15:36:43,365 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 15:36:43,365 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+INFO  2015-09-01 15:36:43,495 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising connector: Active_MQ
+INFO  2015-09-01 15:36:43,525 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2015-09-01 15:36:43,527 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:36:43,528 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@56be1bb1
+INFO  2015-09-01 15:36:43,528 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@5b0c2df4
+INFO  2015-09-01 15:36:43,529 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@7c9d1cde
+INFO  2015-09-01 15:36:43,529 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2ed272bc
+INFO  2015-09-01 15:36:43,529 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@7a6aaca7
+INFO  2015-09-01 15:36:43,535 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 15:36:43,535 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Initialising component: component.216990173
+INFO  2015-09-01 15:36:43,553 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx2.log
+INFO  2015-09-01 15:36:43,553 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx2.log
+INFO  2015-09-01 15:36:43,581 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 15:36:43,581 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 15:36:43,581 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:36:43,583 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2015-09-01 15:36:43,583 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2015-09-01 15:36:43,592 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2015-09-01 15:36:43,890 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=1c151763
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 15:36:43,890 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=1c151763
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 15:36:43,890 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting connector: Active_MQ
+INFO  2015-09-01 15:36:43,895 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:36:43,896 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2015-09-01 15:36:43,897 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:36:43,897 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 15:36:43,899 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Starting component: component.216990173
+INFO  2015-09-01 15:36:43,913 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2015-09-01 15:36:43,920 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.AbstractJmxAgent: Registered Connector Service with name Mule.ActiveMQ-Messaging:type=Connector,name="Active.MQ"
+INFO  2015-09-01 15:36:43,923 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: ActiveMQ-Messaging                                    *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+ERROR 2015-09-01 15:38:57,144 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.exception.CatchMessagingExceptionStrategy: 
+********************************************************************************
+Message               : Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.216990173}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.216990173}. Message payload is of type: NullPayload
+Type                  : org.mule.component.ComponentException
+Code                  : MULE_ERROR--2
+Payload               : {NullPayload}
+JavaDoc               : http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/component/ComponentException.html
+********************************************************************************
+Exception stack is:
+1. Paramenter Not Acceptable (java.lang.IllegalArgumentException)
+  sun.reflect.NativeConstructorAccessorImpl:-2 (null)
+2. java.lang.IllegalArgumentException: Paramenter Not Acceptable (javax.script.ScriptException)
+  org.codehaus.groovy.jsr223.GroovyScriptEngineImpl:348 (http://java.sun.com/j2ee/sdk_1.3/techdocs/api/javax/script/ScriptException.html)
+3. Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.216990173}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.216990173}. Message payload is of type: NullPayload (org.mule.component.ComponentException)
+  org.mule.component.AbstractComponent:142 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/component/ComponentException.html)
+********************************************************************************
+Root Exception stack trace:
+java.lang.IllegalArgumentException: Paramenter Not Acceptable
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:102)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:182)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+	at Script3.run(Script3.groovy:1)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:345)
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:41)
+	at javax.script.CompiledScript.eval(CompiledScript.java:92)
+	at org.mule.module.scripting.component.Scriptable.runScript(Scriptable.java:287)
+	at org.mule.module.scripting.component.ScriptComponent.doInvoke(ScriptComponent.java:78)
+	at org.mule.component.AbstractComponent.invokeInternal(AbstractComponent.java:120)
+	at org.mule.component.AbstractComponent.access$000(AbstractComponent.java:55)
+	at org.mule.component.AbstractComponent$1$1.process(AbstractComponent.java:236)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.component.AbstractComponent.process(AbstractComponent.java:154)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.routing.AbstractSelectiveRouter.processEventWithProcessor(AbstractSelectiveRouter.java:303)
+	at org.mule.routing.AbstractSelectiveRouter.routeWithProcessors(AbstractSelectiveRouter.java:293)
+	at org.mule.routing.AbstractSelectiveRouter.routeWithProcessor(AbstractSelectiveRouter.java:283)
+	at org.mule.routing.AbstractSelectiveRouter.process(AbstractSelectiveRouter.java:198)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProces...
+********************************************************************************
+
+INFO  2015-09-01 15:39:03,517 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: Unexpected Exception: null
+INFO  2015-09-01 15:40:39,085 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:40:39,086 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:40:39,087 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 15:40:39,089 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Stopping component: component.216990173
+INFO  2015-09-01 15:40:39,090 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2015-09-01 15:40:39,092 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping connector: Active_MQ
+INFO  2015-09-01 15:40:39,094 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081
+INFO  2015-09-01 15:40:39,095 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2015-09-01 15:40:39,095 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2015-09-01 15:40:39,097 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'ActiveMQ-Messaging'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:40:39,097 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2015-09-01 15:40:39,098 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:40:39,098 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 15:40:39,098 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Disposing component: component.216990173
+INFO  2015-09-01 15:40:39,099 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2015-09-01 15:40:39,114 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=stop
+  this=1c151763
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 15:40:39,114 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing connector: Active_MQ
+INFO  2015-09-01 15:40:39,133 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@375c94c6: startup date [Tue Sep 01 15:36:43 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 15:40:39,319 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "ActiveMQ-Messaging" shut down normally on: 9/1/15     *
+* 3:40 PM                                                            *
+* Up for: 0 days, 0 hours, 3 mins, 55.737 sec                        *
+**********************************************************************
+INFO  2015-09-01 15:40:39,634 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ActiveMQ-Messaging'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:40:39,638 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2015-09-01 15:40:39,643 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2015-09-01 15:40:39,657 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2015-09-01 15:40:39,657 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.7)
+INFO  2015-09-01 15:40:39,659 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@28d04ab4: startup date [Tue Sep 01 15:40:39 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 15:40:39,905 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2015-09-01 15:40:39,939 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 15:40:39,939 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 15:40:39,940 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 15:40:39,940 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+INFO  2015-09-01 15:40:40,086 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising connector: Active_MQ
+INFO  2015-09-01 15:40:40,111 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2015-09-01 15:40:40,114 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:40:40,115 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3d65ca0e
+INFO  2015-09-01 15:40:40,115 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@65b47c9f
+INFO  2015-09-01 15:40:40,115 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2c61dee3
+INFO  2015-09-01 15:40:40,116 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4d701fd8
+INFO  2015-09-01 15:40:40,116 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@7c3ac59f
+INFO  2015-09-01 15:40:40,121 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 15:40:40,121 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Initialising component: component.787953443
+INFO  2015-09-01 15:40:40,138 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx2.log
+INFO  2015-09-01 15:40:40,139 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx2.log
+INFO  2015-09-01 15:40:40,167 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 15:40:40,167 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 15:40:40,167 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:40:40,169 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2015-09-01 15:40:40,169 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2015-09-01 15:40:40,180 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2015-09-01 15:40:40,463 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=6e517896
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 15:40:40,463 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=6e517896
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 15:40:40,463 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting connector: Active_MQ
+INFO  2015-09-01 15:40:40,469 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 15:40:40,469 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2015-09-01 15:40:40,470 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 15:40:40,470 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 15:40:40,473 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Starting component: component.787953443
+INFO  2015-09-01 15:40:40,483 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2015-09-01 15:40:40,488 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.AbstractJmxAgent: Registered Connector Service with name Mule.ActiveMQ-Messaging:type=Connector,name="Active.MQ"
+INFO  2015-09-01 15:40:40,490 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: ActiveMQ-Messaging                                    *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+ERROR 2015-09-01 15:41:23,061 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.exception.CatchMessagingExceptionStrategy: 
+********************************************************************************
+Message               : Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.787953443}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.787953443}. Message payload is of type: NullPayload
+Type                  : org.mule.component.ComponentException
+Code                  : MULE_ERROR--2
+Payload               : {NullPayload}
+JavaDoc               : http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/component/ComponentException.html
+********************************************************************************
+Exception stack is:
+1. Paramenter Not Acceptable (java.lang.IllegalArgumentException)
+  sun.reflect.NativeConstructorAccessorImpl:-2 (null)
+2. java.lang.IllegalArgumentException: Paramenter Not Acceptable (javax.script.ScriptException)
+  org.codehaus.groovy.jsr223.GroovyScriptEngineImpl:348 (http://java.sun.com/j2ee/sdk_1.3/techdocs/api/javax/script/ScriptException.html)
+3. Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.787953443}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.787953443}. Message payload is of type: NullPayload (org.mule.component.ComponentException)
+  org.mule.component.AbstractComponent:142 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/component/ComponentException.html)
+********************************************************************************
+Root Exception stack trace:
+java.lang.IllegalArgumentException: Paramenter Not Acceptable
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:102)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:182)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+	at Script4.run(Script4.groovy:1)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:345)
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:41)
+	at javax.script.CompiledScript.eval(CompiledScript.java:92)
+	at org.mule.module.scripting.component.Scriptable.runScript(Scriptable.java:287)
+	at org.mule.module.scripting.component.ScriptComponent.doInvoke(ScriptComponent.java:78)
+	at org.mule.component.AbstractComponent.invokeInternal(AbstractComponent.java:120)
+	at org.mule.component.AbstractComponent.access$000(AbstractComponent.java:55)
+	at org.mule.component.AbstractComponent$1$1.process(AbstractComponent.java:236)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.component.AbstractComponent.process(AbstractComponent.java:154)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.routing.AbstractSelectiveRouter.processEventWithProcessor(AbstractSelectiveRouter.java:303)
+	at org.mule.routing.AbstractSelectiveRouter.routeWithProcessors(AbstractSelectiveRouter.java:293)
+	at org.mule.routing.AbstractSelectiveRouter.routeWithProcessor(AbstractSelectiveRouter.java:283)
+	at org.mule.routing.AbstractSelectiveRouter.process(AbstractSelectiveRouter.java:198)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProces...
+********************************************************************************
+
+INFO  2015-09-01 15:41:26,287 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: Unexpected Exception: org.mule.component.ComponentException: Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.787953443}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.787953443}. Message payload is of type: NullPayload
+INFO  2015-09-01 16:02:56,404 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 16:02:56,405 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 16:02:56,406 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 16:02:56,475 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Stopping component: component.787953443
+INFO  2015-09-01 16:02:56,476 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2015-09-01 16:02:56,478 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping connector: Active_MQ
+INFO  2015-09-01 16:02:56,479 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081
+INFO  2015-09-01 16:02:56,480 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2015-09-01 16:02:56,480 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2015-09-01 16:02:56,482 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'ActiveMQ-Messaging'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 16:02:56,482 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2015-09-01 16:02:56,483 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 16:02:56,483 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 16:02:56,483 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Disposing component: component.787953443
+INFO  2015-09-01 16:02:56,484 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2015-09-01 16:02:56,500 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=stop
+  this=6e517896
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 16:02:56,501 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing connector: Active_MQ
+INFO  2015-09-01 16:02:56,519 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@28d04ab4: startup date [Tue Sep 01 15:40:39 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 16:02:56,706 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "ActiveMQ-Messaging" shut down normally on: 9/1/15     *
+* 4:02 PM                                                            *
+* Up for: 0 days, 0 hours, 22 mins, 16.539 sec                       *
+**********************************************************************
+INFO  2015-09-01 16:02:57,009 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ActiveMQ-Messaging'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 16:02:57,015 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2015-09-01 16:02:57,020 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2015-09-01 16:02:57,033 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2015-09-01 16:02:57,034 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.7)
+INFO  2015-09-01 16:02:57,036 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@573788e9: startup date [Tue Sep 01 16:02:57 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 16:02:57,259 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2015-09-01 16:02:57,295 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 16:02:57,295 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 16:02:57,295 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 16:02:57,295 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+INFO  2015-09-01 16:02:57,417 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising connector: Active_MQ
+INFO  2015-09-01 16:02:57,445 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2015-09-01 16:02:57,448 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 16:02:57,449 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4f439750
+INFO  2015-09-01 16:02:57,449 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@5e832dd7
+INFO  2015-09-01 16:02:57,449 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@7636aeba
+INFO  2015-09-01 16:02:57,449 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@971f8
+INFO  2015-09-01 16:02:57,450 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6c1950cc
+INFO  2015-09-01 16:02:57,455 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 16:02:57,455 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Initialising component: component.1626098153
+INFO  2015-09-01 16:02:57,471 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx2.log
+INFO  2015-09-01 16:02:57,471 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx2.log
+INFO  2015-09-01 16:02:57,500 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 16:02:57,500 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 16:02:57,500 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 16:02:57,503 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2015-09-01 16:02:57,503 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2015-09-01 16:02:57,510 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2015-09-01 16:02:57,968 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=46f478f3
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 16:02:57,968 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=46f478f3
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 16:02:57,968 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting connector: Active_MQ
+INFO  2015-09-01 16:02:57,973 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 16:02:57,973 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2015-09-01 16:02:57,974 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 16:02:57,974 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 16:02:57,977 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Starting component: component.1626098153
+INFO  2015-09-01 16:02:57,988 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2015-09-01 16:02:57,995 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.AbstractJmxAgent: Registered Connector Service with name Mule.ActiveMQ-Messaging:type=Connector,name="Active.MQ"
+INFO  2015-09-01 16:02:57,996 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: ActiveMQ-Messaging                                    *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2015-09-01 16:04:08,045 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 16:04:08,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 16:04:08,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 16:04:08,069 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Stopping component: component.1626098153
+INFO  2015-09-01 16:04:08,071 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2015-09-01 16:04:08,073 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping connector: Active_MQ
+INFO  2015-09-01 16:04:08,074 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081
+INFO  2015-09-01 16:04:08,075 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2015-09-01 16:04:08,075 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2015-09-01 16:04:08,078 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'ActiveMQ-Messaging'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 16:04:08,078 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2015-09-01 16:04:08,079 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 16:04:08,079 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 16:04:08,079 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Disposing component: component.1626098153
+INFO  2015-09-01 16:04:08,080 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2015-09-01 16:04:08,095 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=stop
+  this=46f478f3
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 16:04:08,096 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing connector: Active_MQ
+INFO  2015-09-01 16:04:08,115 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@573788e9: startup date [Tue Sep 01 16:02:57 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 16:04:08,299 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "ActiveMQ-Messaging" shut down normally on: 9/1/15     *
+* 4:04 PM                                                            *
+* Up for: 0 days, 0 hours, 1 mins, 10.797 sec                        *
+**********************************************************************
+INFO  2015-09-01 16:04:08,330 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ActiveMQ-Messaging'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 16:04:08,335 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2015-09-01 16:04:08,340 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2015-09-01 16:04:08,355 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2015-09-01 16:04:08,355 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.7)
+INFO  2015-09-01 16:04:08,357 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@3312d6a5: startup date [Tue Sep 01 16:04:08 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 16:04:08,600 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2015-09-01 16:04:08,634 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 16:04:08,634 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 16:04:08,634 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 16:04:08,634 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+INFO  2015-09-01 16:04:08,751 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising connector: Active_MQ
+INFO  2015-09-01 16:04:08,776 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2015-09-01 16:04:08,779 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 16:04:08,780 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@10052e33
+INFO  2015-09-01 16:04:08,781 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@441c1e7c
+INFO  2015-09-01 16:04:08,781 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@121581d3
+INFO  2015-09-01 16:04:08,781 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@41fe4ceb
+INFO  2015-09-01 16:04:08,781 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@42f3e464
+INFO  2015-09-01 16:04:08,786 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 16:04:08,787 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Initialising component: component.302332962
+INFO  2015-09-01 16:04:08,805 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx2.log
+INFO  2015-09-01 16:04:08,805 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx2.log
+INFO  2015-09-01 16:04:08,833 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 16:04:08,834 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 16:04:08,834 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 16:04:08,836 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2015-09-01 16:04:08,836 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2015-09-01 16:04:08,843 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2015-09-01 16:04:09,131 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=39b3f502
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 16:04:09,131 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=39b3f502
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 16:04:09,131 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting connector: Active_MQ
+INFO  2015-09-01 16:04:09,136 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 16:04:09,137 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2015-09-01 16:04:09,138 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 16:04:09,138 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 16:04:09,140 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Starting component: component.302332962
+INFO  2015-09-01 16:04:09,150 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2015-09-01 16:04:09,156 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.AbstractJmxAgent: Registered Connector Service with name Mule.ActiveMQ-Messaging:type=Connector,name="Active.MQ"
+INFO  2015-09-01 16:04:09,159 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: ActiveMQ-Messaging                                    *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+ERROR 2015-09-01 16:04:30,415 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.exception.CatchMessagingExceptionStrategy: 
+********************************************************************************
+Message               : Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Message payload is of type: NullPayload
+Type                  : org.mule.component.ComponentException
+Code                  : MULE_ERROR--2
+Payload               : {NullPayload}
+JavaDoc               : http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/component/ComponentException.html
+********************************************************************************
+Exception stack is:
+1. Paramenter Not Acceptable (java.lang.IllegalArgumentException)
+  sun.reflect.NativeConstructorAccessorImpl:-2 (null)
+2. java.lang.IllegalArgumentException: Paramenter Not Acceptable (javax.script.ScriptException)
+  org.codehaus.groovy.jsr223.GroovyScriptEngineImpl:348 (http://java.sun.com/j2ee/sdk_1.3/techdocs/api/javax/script/ScriptException.html)
+3. Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Message payload is of type: NullPayload (org.mule.component.ComponentException)
+  org.mule.component.AbstractComponent:142 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/component/ComponentException.html)
+********************************************************************************
+Root Exception stack trace:
+java.lang.IllegalArgumentException: Paramenter Not Acceptable
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:102)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:182)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+	at Script6.run(Script6.groovy:1)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:345)
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:41)
+	at javax.script.CompiledScript.eval(CompiledScript.java:92)
+	at org.mule.module.scripting.component.Scriptable.runScript(Scriptable.java:287)
+	at org.mule.module.scripting.component.ScriptComponent.doInvoke(ScriptComponent.java:78)
+	at org.mule.component.AbstractComponent.invokeInternal(AbstractComponent.java:120)
+	at org.mule.component.AbstractComponent.access$000(AbstractComponent.java:55)
+	at org.mule.component.AbstractComponent$1$1.process(AbstractComponent.java:236)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.component.AbstractComponent.process(AbstractComponent.java:154)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.routing.AbstractSelectiveRouter.processEventWithProcessor(AbstractSelectiveRouter.java:303)
+	at org.mule.routing.AbstractSelectiveRouter.routeWithProcessors(AbstractSelectiveRouter.java:293)
+	at org.mule.routing.AbstractSelectiveRouter.routeWithProcessor(AbstractSelectiveRouter.java:283)
+	at org.mule.routing.AbstractSelectiveRouter.process(AbstractSelectiveRouter.java:198)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProces...
+********************************************************************************
+
+INFO  2015-09-01 16:04:40,209 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: Unexpected Exception: The request cannot be processed, the error is 
+********************************************************************************
+Message               : Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Message payload is of type: NullPayload
+Code                  : MULE_ERROR--2
+--------------------------------------------------------------------------------
+Exception stack is:
+1. Paramenter Not Acceptable (java.lang.IllegalArgumentException)
+  sun.reflect.NativeConstructorAccessorImpl:-2 (null)
+2. java.lang.IllegalArgumentException: Paramenter Not Acceptable (javax.script.ScriptException)
+  org.codehaus.groovy.jsr223.GroovyScriptEngineImpl:348 (http://java.sun.com/j2ee/sdk_1.3/techdocs/api/javax/script/ScriptException.html)
+3. Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Message payload is of type: NullPayload (org.mule.component.ComponentException)
+  org.mule.component.AbstractComponent:142 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/component/ComponentException.html)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.lang.IllegalArgumentException: Paramenter Not Acceptable
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    + 3 more (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************
+ org.mule.component.ComponentException: Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Message payload is of type: NullPayload
+ERROR 2015-09-01 16:08:11,132 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.exception.CatchMessagingExceptionStrategy: 
+********************************************************************************
+Message               : Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Message payload is of type: NullPayload
+Type                  : org.mule.component.ComponentException
+Code                  : MULE_ERROR--2
+Payload               : {NullPayload}
+JavaDoc               : http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/component/ComponentException.html
+********************************************************************************
+Exception stack is:
+1. Paramenter Not Acceptable (java.lang.IllegalArgumentException)
+  sun.reflect.NativeConstructorAccessorImpl:-2 (null)
+2. java.lang.IllegalArgumentException: Paramenter Not Acceptable (javax.script.ScriptException)
+  org.codehaus.groovy.jsr223.GroovyScriptEngineImpl:348 (http://java.sun.com/j2ee/sdk_1.3/techdocs/api/javax/script/ScriptException.html)
+3. Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Message payload is of type: NullPayload (org.mule.component.ComponentException)
+  org.mule.component.AbstractComponent:142 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/component/ComponentException.html)
+********************************************************************************
+Root Exception stack trace:
+java.lang.IllegalArgumentException: Paramenter Not Acceptable
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:102)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+	at Script6.run(Script6.groovy:1)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:345)
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:41)
+	at javax.script.CompiledScript.eval(CompiledScript.java:92)
+	at org.mule.module.scripting.component.Scriptable.runScript(Scriptable.java:287)
+	at org.mule.module.scripting.component.ScriptComponent.doInvoke(ScriptComponent.java:78)
+	at org.mule.component.AbstractComponent.invokeInternal(AbstractComponent.java:120)
+	at org.mule.component.AbstractComponent.access$000(AbstractComponent.java:55)
+	at org.mule.component.AbstractComponent$1$1.process(AbstractComponent.java:236)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.component.AbstractComponent.process(AbstractComponent.java:154)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.routing.AbstractSelectiveRouter.processEventWithProcessor(AbstractSelectiveRouter.java:303)
+	at org.mule.routing.AbstractSelectiveRouter.routeWithProcessors(AbstractSelectiveRouter.java:293)
+	at org.mule.routing.AbstractSelectiveRouter.routeWithProcessor(AbstractSelectiveRouter.java:283)
+	at org.mule.routing.AbstractSelectiveRouter.process(AbstractSelectiveRouter.java:198)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:102)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor...
+********************************************************************************
+
+INFO  2015-09-01 16:08:33,252 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: Unexpected Exception: The request cannot be processed, the error is 
+********************************************************************************
+Message               : Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Message payload is of type: NullPayload
+Code                  : MULE_ERROR--2
+--------------------------------------------------------------------------------
+Exception stack is:
+1. Paramenter Not Acceptable (java.lang.IllegalArgumentException)
+  sun.reflect.NativeConstructorAccessorImpl:-2 (null)
+2. java.lang.IllegalArgumentException: Paramenter Not Acceptable (javax.script.ScriptException)
+  org.codehaus.groovy.jsr223.GroovyScriptEngineImpl:348 (http://java.sun.com/j2ee/sdk_1.3/techdocs/api/javax/script/ScriptException.html)
+3. Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Message payload is of type: NullPayload (org.mule.component.ComponentException)
+  org.mule.component.AbstractComponent:142 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/component/ComponentException.html)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.lang.IllegalArgumentException: Paramenter Not Acceptable
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    + 3 more (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************
+ org.mule.component.ComponentException: Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.302332962}. Message payload is of type: NullPayload
+INFO  2015-09-01 16:09:29,391 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 16:09:29,392 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 16:09:29,392 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 16:09:29,468 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Stopping component: component.302332962
+INFO  2015-09-01 16:09:29,470 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2015-09-01 16:09:29,472 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping connector: Active_MQ
+INFO  2015-09-01 16:09:29,473 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081
+INFO  2015-09-01 16:09:29,474 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2015-09-01 16:09:29,474 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2015-09-01 16:09:29,476 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'ActiveMQ-Messaging'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 16:09:29,477 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2015-09-01 16:09:29,477 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 16:09:29,477 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 16:09:29,477 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Disposing component: component.302332962
+INFO  2015-09-01 16:09:29,478 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2015-09-01 16:09:29,493 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=stop
+  this=39b3f502
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 16:09:29,493 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing connector: Active_MQ
+INFO  2015-09-01 16:09:29,513 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@3312d6a5: startup date [Tue Sep 01 16:04:08 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 16:09:29,697 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "ActiveMQ-Messaging" shut down normally on: 9/1/15     *
+* 4:09 PM                                                            *
+* Up for: 0 days, 0 hours, 5 mins, 20.863 sec                        *
+**********************************************************************
+INFO  2015-09-01 16:09:30,024 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ActiveMQ-Messaging'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 16:09:30,029 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2015-09-01 16:09:30,033 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2015-09-01 16:09:30,045 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2015-09-01 16:09:30,046 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.7)
+INFO  2015-09-01 16:09:30,047 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@110eac1e: startup date [Tue Sep 01 16:09:30 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 16:09:30,258 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2015-09-01 16:09:30,292 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 16:09:30,292 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 16:09:30,292 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 16:09:30,292 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+INFO  2015-09-01 16:09:30,402 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising connector: Active_MQ
+INFO  2015-09-01 16:09:30,427 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2015-09-01 16:09:30,430 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 16:09:30,431 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@1d9b341c
+INFO  2015-09-01 16:09:30,431 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@387a2973
+INFO  2015-09-01 16:09:30,431 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@5c3759fc
+INFO  2015-09-01 16:09:30,431 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@35f4deb0
+INFO  2015-09-01 16:09:30,436 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 16:09:30,436 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Initialising component: component.641706957
+INFO  2015-09-01 16:09:30,452 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx2.log
+INFO  2015-09-01 16:09:30,452 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx2.log
+INFO  2015-09-01 16:09:30,477 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 16:09:30,477 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 16:09:30,477 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 16:09:30,479 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2015-09-01 16:09:30,479 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2015-09-01 16:09:30,490 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2015-09-01 16:09:30,773 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=18fee08d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 16:09:30,773 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=18fee08d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 16:09:30,773 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting connector: Active_MQ
+INFO  2015-09-01 16:09:30,778 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 16:09:30,778 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2015-09-01 16:09:30,779 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 16:09:30,779 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 16:09:30,781 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Starting component: component.641706957
+INFO  2015-09-01 16:09:30,792 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2015-09-01 16:09:30,799 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.AbstractJmxAgent: Registered Connector Service with name Mule.ActiveMQ-Messaging:type=Connector,name="Active.MQ"
+INFO  2015-09-01 16:09:30,802 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: ActiveMQ-Messaging                                    *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+ERROR 2015-09-01 16:09:52,087 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.exception.CatchMessagingExceptionStrategy: 
+********************************************************************************
+Message               : Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.641706957}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.641706957}. Message payload is of type: NullPayload
+Type                  : org.mule.component.ComponentException
+Code                  : MULE_ERROR--2
+Payload               : {NullPayload}
+JavaDoc               : http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/component/ComponentException.html
+********************************************************************************
+Exception stack is:
+1. Paramenter Not Acceptable (java.lang.IllegalArgumentException)
+  sun.reflect.NativeConstructorAccessorImpl:-2 (null)
+2. java.lang.IllegalArgumentException: Paramenter Not Acceptable (javax.script.ScriptException)
+  org.codehaus.groovy.jsr223.GroovyScriptEngineImpl:348 (http://java.sun.com/j2ee/sdk_1.3/techdocs/api/javax/script/ScriptException.html)
+3. Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.641706957}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.641706957}. Message payload is of type: NullPayload (org.mule.component.ComponentException)
+  org.mule.component.AbstractComponent:142 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/component/ComponentException.html)
+********************************************************************************
+Root Exception stack trace:
+java.lang.IllegalArgumentException: Paramenter Not Acceptable
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:102)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:182)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+	at Script7.run(Script7.groovy:1)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:345)
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:41)
+	at javax.script.CompiledScript.eval(CompiledScript.java:92)
+	at org.mule.module.scripting.component.Scriptable.runScript(Scriptable.java:287)
+	at org.mule.module.scripting.component.ScriptComponent.doInvoke(ScriptComponent.java:78)
+	at org.mule.component.AbstractComponent.invokeInternal(AbstractComponent.java:120)
+	at org.mule.component.AbstractComponent.access$000(AbstractComponent.java:55)
+	at org.mule.component.AbstractComponent$1$1.process(AbstractComponent.java:236)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.component.AbstractComponent.process(AbstractComponent.java:154)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.routing.AbstractSelectiveRouter.processEventWithProcessor(AbstractSelectiveRouter.java:303)
+	at org.mule.routing.AbstractSelectiveRouter.routeWithProcessors(AbstractSelectiveRouter.java:293)
+	at org.mule.routing.AbstractSelectiveRouter.routeWithProcessor(AbstractSelectiveRouter.java:283)
+	at org.mule.routing.AbstractSelectiveRouter.process(AbstractSelectiveRouter.java:198)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:107)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:85)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:56)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:24)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:94)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProces...
+********************************************************************************
+
+INFO  2015-09-01 16:10:07,546 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: Unexpected Exception: The request cannot be processed, the error is 
+********************************************************************************
+Message               : Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.641706957}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.641706957}. Message payload is of type: NullPayload
+Code                  : MULE_ERROR--2
+--------------------------------------------------------------------------------
+Exception stack is:
+1. Paramenter Not Acceptable (java.lang.IllegalArgumentException)
+  sun.reflect.NativeConstructorAccessorImpl:-2 (null)
+2. java.lang.IllegalArgumentException: Paramenter Not Acceptable (javax.script.ScriptException)
+  org.codehaus.groovy.jsr223.GroovyScriptEngineImpl:348 (http://java.sun.com/j2ee/sdk_1.3/techdocs/api/javax/script/ScriptException.html)
+3. Failed to invoke ScriptComponent{Mule-Use-Case-A-MainFlow.component.641706957}. Component that caused exception is: ScriptComponent{Mule-Use-Case-A-MainFlow.component.641706957}. Message payload is of type: NullPayload (org.mule.component.ComponentException)
+  org.mule.component.AbstractComponent:142 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/component/ComponentException.html)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.lang.IllegalArgumentException: Paramenter Not Acceptable
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    + 3 more (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************
+ 

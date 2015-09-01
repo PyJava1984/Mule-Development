@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+<mule xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.7.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
@@ -9,7 +9,8 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/current/mule-jms.xsd
 http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
 http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
-http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mule/scripting/current/mule-scripting.xsd">
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
     <jms:activemq-connector name="Active_MQ" brokerURL="tcp://localhost:61616" validateConnections="true" doc:name="Active MQ">
         <reconnect frequency="15000" count="10"/>
@@ -30,8 +31,13 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
             <when expression="#[message.inboundProperties.'http.query.params'.companyName != null]">
                 <flow-ref name="activemq-messaging-datd-retrieval-by-company-Sub_Flow" doc:name="Data Retrieval by Company"/>
             </when>
-            <otherwise>
+            <when expression="#[message.inboundProperties.'http.query.params'.phoneNumber != null]">
                 <flow-ref name="activemq-messaging-datd-retrieval-by-phone-Sub_Flow" doc:name="Data Retrieval By Phone Number"/>
+            </when>
+            <otherwise>
+                <scripting:component doc:name="Groovy">
+                    <scripting:script engine="Groovy"><![CDATA[throw new IllegalArgumentException('Paramenter Not Acceptable')]]></scripting:script>
+                </scripting:component>
             </otherwise>
         </choice>
         <set-variable variableName="messageCounter" value="0" doc:name="Set Message Counter to 0"/>
@@ -48,7 +54,7 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
                 <jms:outbound-endpoint queue="Dead.Letter.Invalid.Data" connector-ref="Active_MQ" doc:name="JMS"/>
             </catch-exception-strategy>
             <catch-exception-strategy when="#[exception.causedBy(java.lang.Exception)]" doc:name="Catch ActiveMQ Connection Exception">
-                <set-payload value="#[payload]" doc:name="Set Payload"/>
+                <set-payload value="The request cannot be processed, the error is #[exception.getSummaryMessage()] " doc:name="Set Payload"/>
                 <logger message="Unexpected Exception: #[payload]" level="INFO" doc:name="Logger"/>
             </catch-exception-strategy>
         </choice-exception-strategy>
