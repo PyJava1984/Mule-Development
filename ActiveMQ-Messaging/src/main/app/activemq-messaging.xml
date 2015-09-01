@@ -20,15 +20,21 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
         <db:parameterized-query><![CDATA[SELECT * FROM Customer WHERE company_name = :companyName;]]></db:parameterized-query>
         <db:in-param name="companyName" defaultValue="#[message.inboundProperties.'http.query.params'.companyName];"/>
     </db:template-query>
+    <db:template-query name="Template_Query_By_Phone_Number" doc:name="Template Query">
+        <db:parameterized-query><![CDATA[SELECT * FROM CUSTOMER WHERE phone = :phoneNumber;]]></db:parameterized-query>
+        <db:in-param name="phoneNumber" type="CHAR" defaultValue="#[message.inboundProperties.'http.query.params'.phoneNumber]"/>
+    </db:template-query>
     <flow name="Mule-Use-Case-A-MainFlow">
-        <http:listener config-ref="HTTP_Listener_Configuration" path="/json-jms" allowedMethods="GET,POST" doc:name="HTTP"/>
-        <db:select config-ref="MySQL_Configuration" doc:name="Database">
-            <db:template-query-ref name="Template_Query_By_Company_Name"/>
-            <db:in-param name="companyName" value="#[message.inboundProperties.'http.query.params'.companyName]"/>
-        </db:select>
-        <json:object-to-json-transformer doc:name="Object to JSON"/>
-        <json:json-to-object-transformer returnClass="java.util.List" doc:name="JSON to Object"/>
-        <set-variable variableName="messageCounter" value="0" doc:name="Variable"/>
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/json-jms" allowedMethods="GET,POST,DELETE, UPDATE" doc:name="HTTP"/>
+        <choice doc:name="Choice">
+            <when expression="#[message.inboundProperties.'http.query.params'.companyName != null]">
+                <flow-ref name="activemq-messaging-datd-retrieval-by-company-Sub_Flow" doc:name="Data Retrieval by Company"/>
+            </when>
+            <otherwise>
+                <flow-ref name="activemq-messaging-datd-retrieval-by-phone-Sub_Flow" doc:name="Data Retrieval By Phone Number"/>
+            </otherwise>
+        </choice>
+        <set-variable variableName="messageCounter" value="0" doc:name="Set Message Counter to 0"/>
         <flow-ref name="activemq-messagiing-send-Sub_Flow" doc:name="activemq-messagiing-send-Sub_Flow"/>
         <set-payload value="{&quot;count&quot;: #[flowVars.messageCounter]}" doc:name="Set Payload"/>
         <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
@@ -54,6 +60,22 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
             <set-variable variableName="messageCounter" value="#[flowVars.counter]" doc:name="Set Count Variable"/>
             <jms:outbound-endpoint queue="Customer.Information" connector-ref="Active_MQ" doc:name="Send To JMS"/>
         </foreach>
+    </sub-flow>
+    <sub-flow name="activemq-messaging-datd-retrieval-by-company-Sub_Flow">
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:template-query-ref name="Template_Query_By_Company_Name"/>
+            <db:in-param name="companyName" value="#[message.inboundProperties.'http.query.params'.companyName]"/>
+        </db:select>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+        <json:json-to-object-transformer returnClass="java.util.List" doc:name="JSON to Object"/>
+    </sub-flow>
+    <sub-flow name="activemq-messaging-datd-retrieval-by-phone-Sub_Flow">
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:template-query-ref name="Template_Query_By_Phone_Number"/>
+            <db:in-param name="phoneNumber" type="CHAR" value="#[message.inboundProperties.'http.query.params'.phoneNumber]"/>
+        </db:select>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+        <json:json-to-object-transformer returnClass="java.util.List" doc:name="JSON to Object"/>
     </sub-flow>
     <catch-exception-strategy name="globlal_Exception_Strategy">
         <set-payload value="#[payload]" doc:name="Set Payload"/>
