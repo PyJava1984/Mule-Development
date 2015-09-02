@@ -59,6 +59,11 @@ http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mul
             </catch-exception-strategy>
         </choice-exception-strategy>
     </flow>
+    <flow name="activemq-messaging-subscriberFlow">
+        <jms:inbound-endpoint queue="Customer.Information" connector-ref="Active_MQ" doc:name="JMS"/>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+    </flow>
     <sub-flow name="activemq-messagiing-send-Sub_Flow">
         <foreach collection="#[payload]" doc:name="Loop List Of Messages">
             <logger message="#[payload]" level="INFO" doc:name="Log Single message"/>

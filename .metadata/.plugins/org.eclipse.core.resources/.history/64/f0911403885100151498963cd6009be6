@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.7.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/current/mule-jms.xsd">
+
+    <flow name="mule-refactoringFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration_Polling" path="/customer" allowedMethods="GET,POST,UPDATE,DELETE" doc:name="HTTP"/>
+        <set-variable variableName="messageCounter" value="0" doc:name="Variable"/>
+        <flow-ref name="Retrieve-All-Customers-From-DB" doc:name="Retrieve-All-Customers"/>
+        <flow-ref name="Send-Customer-To-Queue" doc:name="Send-Customer-To-Queue"/>
+        <set-payload value="{&quot;Count&quot;: #[flowVars.messageCounter]}" doc:name="Set Payload"/>
+        <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+    </flow>
+    <flow name="Retrieve-All-Customers-From-DB">
+        <db:select config-ref="MySQL_Configuration_Local" doc:name="Database">
+            <db:template-query-ref name="Retrieve-All-Customers"/>
+        </db:select>
+    </flow>
+    <flow name="Send-Customer-To-Queue">
+        <json:json-to-object-transformer returnClass="java.util.List" doc:name="JSON to List"/>
+        <foreach doc:name="For Each">
+            <json:object-to-json-transformer doc:name="Object to JSON"/>
+            <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+            <set-variable variableName="messageCounter" value="#[flowVars.counter]" doc:name="Variable"/>
+            <jms:outbound-endpoint queue="Customer.Information" connector-ref="Active_MQ_TCP" doc:name="JMS"/>
+        </foreach>
+    </flow>
+</mule>

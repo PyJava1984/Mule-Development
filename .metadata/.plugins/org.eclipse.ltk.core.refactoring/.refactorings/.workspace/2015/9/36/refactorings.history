@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;lineage-common-1.0.0-snapshot&apos;" deleteContents="false" description="Delete resource &apos;lineage-common-1.0.0-snapshot&apos;" element1="/lineage-common-1.0.0-snapshot" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1441226155806"/>
+</session>

@@ -1769,3 +1769,522 @@ java.lang.IllegalArgumentException: Paramenter Not Acceptable
     + 3 more (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
 ********************************************************************************
  
+INFO  2015-09-01 22:56:21,866 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ActiveMQ-Messaging'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 22:56:22,013 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2015-09-01 22:56:22,183 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2015-09-01 22:56:22,375 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2015-09-01 22:56:22,375 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.7)
+INFO  2015-09-01 22:56:22,472 [main] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@20c3b85a: startup date [Tue Sep 01 22:56:22 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 22:56:22,242 [main] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2015-09-01 22:56:22,567 [main] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 22:56:22,567 [main] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 22:56:22,567 [main] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 22:56:22,567 [main] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 22:56:23,521 [main] org.mule.module.ognl.expression.OgnlExpressionEvaluator: OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+INFO  2015-09-01 22:56:23,941 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising connector: Active_MQ
+INFO  2015-09-01 22:56:24,133 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2015-09-01 22:56:24,141 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: activemq-messagingFlow
+INFO  2015-09-01 22:56:24,143 [main] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@26b2f71d
+INFO  2015-09-01 22:56:24,160 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: activemq-messagingFlow.stage1
+INFO  2015-09-01 22:56:24,358 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 22:56:24,360 [main] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6576c340
+INFO  2015-09-01 22:56:24,360 [main] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@580cd2ca
+INFO  2015-09-01 22:56:24,360 [main] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@31e2f8ef
+INFO  2015-09-01 22:56:24,360 [main] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@716c5c8d
+INFO  2015-09-01 22:56:24,387 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 22:56:24,389 [main] org.mule.component.ComponentLifecycleManager: Initialising component: component.362209701
+INFO  2015-09-01 22:56:25,097 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx2.log
+INFO  2015-09-01 22:56:25,108 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx2.log
+INFO  2015-09-01 22:56:25,211 [main] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 22:56:25,211 [main] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 22:56:25,212 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 22:56:25,216 [main] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2015-09-01 22:56:25,216 [main] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2015-09-01 22:56:25,267 [main] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2015-09-01 22:56:25,604 [main] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=8ff20ba
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 22:56:25,605 [main] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=8ff20ba
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 22:56:25,606 [main] org.mule.lifecycle.AbstractLifecycleManager: Starting connector: Active_MQ
+INFO  2015-09-01 22:56:25,616 [main] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 22:56:25,617 [main] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2015-09-01 22:56:25,619 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: activemq-messagingFlow
+INFO  2015-09-01 22:56:25,620 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: activemq-messagingFlow.stage1
+INFO  2015-09-01 22:56:25,629 [main] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Registering listener: activemq-messagingFlow on endpointUri: jms://Customer.Information
+INFO  2015-09-01 22:56:25,639 [main] org.mule.transport.service.DefaultTransportServiceDescriptor: Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+INFO  2015-09-01 22:56:25,640 [main] org.mule.transport.service.DefaultTransportServiceDescriptor: Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+INFO  2015-09-01 22:56:25,644 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+INFO  2015-09-01 22:56:25,646 [main] org.mule.transport.jms.MultiConsumerJmsMessageReceiver: Connecting clusterizable message receiver
+INFO  2015-09-01 22:56:25,733 [main] org.mule.transport.jms.MultiConsumerJmsMessageReceiver: Endpoint jms://Customer.Information has been successfully reconnected.
+INFO  2015-09-01 22:56:25,734 [main] org.mule.lifecycle.AbstractLifecycleManager: Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+INFO  2015-09-01 22:56:25,734 [main] org.mule.transport.jms.MultiConsumerJmsMessageReceiver: Starting clusterizable message receiver
+INFO  2015-09-01 22:56:25,736 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 22:56:25,736 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 22:56:25,739 [main] org.mule.component.ComponentLifecycleManager: Starting component: component.362209701
+INFO  2015-09-01 22:56:25,792 [main] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2015-09-01 22:56:25,844 [main] org.mule.module.management.agent.AbstractJmxAgent: Attempting to register service with name: Mule.ActiveMQ-Messaging:type=Endpoint,service="activemq-messagingFlow",connector=Active_MQ,name="endpoint.jms.Customer.Information"
+INFO  2015-09-01 22:56:25,845 [main] org.mule.module.management.agent.AbstractJmxAgent: Registered Endpoint Service with name: Mule.ActiveMQ-Messaging:type=Endpoint,service="activemq-messagingFlow",connector=Active_MQ,name="endpoint.jms.Customer.Information"
+INFO  2015-09-01 22:56:25,846 [main] org.mule.module.management.agent.AbstractJmxAgent: Registered Connector Service with name Mule.ActiveMQ-Messaging:type=Connector,name="Active.MQ"
+INFO  2015-09-01 22:56:25,851 [main] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: ActiveMQ-Messaging                                    *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2015-09-01 22:57:27,102 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.03] org.mule.api.processor.LoggerMessageProcessor: 
+org.mule.DefaultMuleMessage
+{
+  id=33695d00-511e-11e5-a32c-72208406d1a5
+  payload=java.lang.String
+  correlationId=89116aa0-50b9-11e5-b31b-72208406d1a5
+  correlationGroup=8
+  correlationSeq=2
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    JMSCorrelationID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    JMSDeliveryMode=1
+    JMSDestination=queue://Customer.Information
+    JMSExpiration=0
+    JMSMessageID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:4:1:1
+    JMSPriority=4
+    JMSRedelivered=false
+    JMSTimestamp=1441119506551
+    MULE_CORRELATION_GROUP_SIZE=8
+    MULE_CORRELATION_ID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    MULE_CORRELATION_SEQUENCE=2
+    MULE_ENDPOINT=jms://Customer.Information
+    MULE_MESSAGE_ID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:4:1:1
+    MULE_ORIGINATING_ENDPOINT=endpoint.jms.Customer.Information
+    MULE_SESSION=rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkODkxMTkxYjAtNTBiOS0xMWU1LWIzMWItNzIyMDg0MDZkMWE1c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+INFO  2015-09-01 22:58:10,986 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.02] org.mule.api.processor.LoggerMessageProcessor: 
+org.mule.DefaultMuleMessage
+{
+  id=3360d180-511e-11e5-a32c-72208406d1a5
+  payload=java.lang.String
+  correlationId=89116aa0-50b9-11e5-b31b-72208406d1a5
+  correlationGroup=8
+  correlationSeq=1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    JMSCorrelationID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    JMSDeliveryMode=1
+    JMSDestination=queue://Customer.Information
+    JMSExpiration=0
+    JMSMessageID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:2:1:1
+    JMSPriority=4
+    JMSRedelivered=false
+    JMSTimestamp=1441119506540
+    MULE_CORRELATION_GROUP_SIZE=8
+    MULE_CORRELATION_ID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    MULE_CORRELATION_SEQUENCE=1
+    MULE_ENDPOINT=jms://Customer.Information
+    MULE_MESSAGE_ID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:2:1:1
+    MULE_ORIGINATING_ENDPOINT=endpoint.jms.Customer.Information
+    MULE_SESSION=rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkODkxMTkxYjAtNTBiOS0xMWU1LWIzMWItNzIyMDg0MDZkMWE1c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+INFO  2015-09-01 22:58:10,988 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.04] org.mule.api.processor.LoggerMessageProcessor: 
+org.mule.DefaultMuleMessage
+{
+  id=3369d230-511e-11e5-a32c-72208406d1a5
+  payload=java.lang.String
+  correlationId=89116aa0-50b9-11e5-b31b-72208406d1a5
+  correlationGroup=8
+  correlationSeq=3
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    JMSCorrelationID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    JMSDeliveryMode=1
+    JMSDestination=queue://Customer.Information
+    JMSExpiration=0
+    JMSMessageID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:6:1:1
+    JMSPriority=4
+    JMSRedelivered=false
+    JMSTimestamp=1441119506559
+    MULE_CORRELATION_GROUP_SIZE=8
+    MULE_CORRELATION_ID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    MULE_CORRELATION_SEQUENCE=3
+    MULE_ENDPOINT=jms://Customer.Information
+    MULE_MESSAGE_ID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:6:1:1
+    MULE_ORIGINATING_ENDPOINT=endpoint.jms.Customer.Information
+    MULE_SESSION=rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkODkxMTkxYjAtNTBiOS0xMWU1LWIzMWItNzIyMDg0MDZkMWE1c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+INFO  2015-09-01 22:58:10,988 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.06] org.mule.api.processor.LoggerMessageProcessor: 
+org.mule.DefaultMuleMessage
+{
+  id=336a9580-511e-11e5-a32c-72208406d1a5
+  payload=java.lang.String
+  correlationId=89116aa0-50b9-11e5-b31b-72208406d1a5
+  correlationGroup=8
+  correlationSeq=5
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    JMSCorrelationID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    JMSDeliveryMode=1
+    JMSDestination=queue://Customer.Information
+    JMSExpiration=0
+    JMSMessageID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:10:1:1
+    JMSPriority=4
+    JMSRedelivered=false
+    JMSTimestamp=1441119506575
+    MULE_CORRELATION_GROUP_SIZE=8
+    MULE_CORRELATION_ID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    MULE_CORRELATION_SEQUENCE=5
+    MULE_ENDPOINT=jms://Customer.Information
+    MULE_MESSAGE_ID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:10:1:1
+    MULE_ORIGINATING_ENDPOINT=endpoint.jms.Customer.Information
+    MULE_SESSION=rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkODkxMTkxYjAtNTBiOS0xMWU1LWIzMWItNzIyMDg0MDZkMWE1c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+INFO  2015-09-01 22:58:10,988 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.05] org.mule.api.processor.LoggerMessageProcessor: 
+org.mule.DefaultMuleMessage
+{
+  id=336a2050-511e-11e5-a32c-72208406d1a5
+  payload=java.lang.String
+  correlationId=89116aa0-50b9-11e5-b31b-72208406d1a5
+  correlationGroup=8
+  correlationSeq=4
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    JMSCorrelationID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    JMSDeliveryMode=1
+    JMSDestination=queue://Customer.Information
+    JMSExpiration=0
+    JMSMessageID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:8:1:1
+    JMSPriority=4
+    JMSRedelivered=false
+    JMSTimestamp=1441119506568
+    MULE_CORRELATION_GROUP_SIZE=8
+    MULE_CORRELATION_ID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    MULE_CORRELATION_SEQUENCE=4
+    MULE_ENDPOINT=jms://Customer.Information
+    MULE_MESSAGE_ID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:8:1:1
+    MULE_ORIGINATING_ENDPOINT=endpoint.jms.Customer.Information
+    MULE_SESSION=rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkODkxMTkxYjAtNTBiOS0xMWU1LWIzMWItNzIyMDg0MDZkMWE1c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+INFO  2015-09-01 22:58:10,988 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.07] org.mule.api.processor.LoggerMessageProcessor: 
+org.mule.DefaultMuleMessage
+{
+  id=336ae3a0-511e-11e5-a32c-72208406d1a5
+  payload=java.lang.String
+  correlationId=89116aa0-50b9-11e5-b31b-72208406d1a5
+  correlationGroup=8
+  correlationSeq=6
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    JMSCorrelationID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    JMSDeliveryMode=1
+    JMSDestination=queue://Customer.Information
+    JMSExpiration=0
+    JMSMessageID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:12:1:1
+    JMSPriority=4
+    JMSRedelivered=false
+    JMSTimestamp=1441119506582
+    MULE_CORRELATION_GROUP_SIZE=8
+    MULE_CORRELATION_ID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    MULE_CORRELATION_SEQUENCE=6
+    MULE_ENDPOINT=jms://Customer.Information
+    MULE_MESSAGE_ID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:12:1:1
+    MULE_ORIGINATING_ENDPOINT=endpoint.jms.Customer.Information
+    MULE_SESSION=rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkODkxMTkxYjAtNTBiOS0xMWU1LWIzMWItNzIyMDg0MDZkMWE1c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+INFO  2015-09-01 22:58:10,988 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.08] org.mule.api.processor.LoggerMessageProcessor: 
+org.mule.DefaultMuleMessage
+{
+  id=336e6610-511e-11e5-a32c-72208406d1a5
+  payload=java.lang.String
+  correlationId=89116aa0-50b9-11e5-b31b-72208406d1a5
+  correlationGroup=8
+  correlationSeq=7
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    JMSCorrelationID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    JMSDeliveryMode=1
+    JMSDestination=queue://Customer.Information
+    JMSExpiration=0
+    JMSMessageID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:14:1:1
+    JMSPriority=4
+    JMSRedelivered=false
+    JMSTimestamp=1441119506590
+    MULE_CORRELATION_GROUP_SIZE=8
+    MULE_CORRELATION_ID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    MULE_CORRELATION_SEQUENCE=7
+    MULE_ENDPOINT=jms://Customer.Information
+    MULE_MESSAGE_ID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:14:1:1
+    MULE_ORIGINATING_ENDPOINT=endpoint.jms.Customer.Information
+    MULE_SESSION=rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkODkxMTkxYjAtNTBiOS0xMWU1LWIzMWItNzIyMDg0MDZkMWE1c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+INFO  2015-09-01 22:58:10,989 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.09] org.mule.api.processor.LoggerMessageProcessor: 
+org.mule.DefaultMuleMessage
+{
+  id=336e8d21-511e-11e5-a32c-72208406d1a5
+  payload=java.lang.String
+  correlationId=89116aa0-50b9-11e5-b31b-72208406d1a5
+  correlationGroup=8
+  correlationSeq=8
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    JMSCorrelationID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    JMSDeliveryMode=1
+    JMSDestination=queue://Customer.Information
+    JMSExpiration=0
+    JMSMessageID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:16:1:1
+    JMSPriority=4
+    JMSRedelivered=false
+    JMSTimestamp=1441119506596
+    MULE_CORRELATION_GROUP_SIZE=8
+    MULE_CORRELATION_ID=89116aa0-50b9-11e5-b31b-72208406d1a5
+    MULE_CORRELATION_SEQUENCE=8
+    MULE_ENDPOINT=jms://Customer.Information
+    MULE_MESSAGE_ID=ID:Guojiangs-MacBook-Pro.local-50165-1441119237159-1:1:16:1:1
+    MULE_ORIGINATING_ENDPOINT=endpoint.jms.Customer.Information
+    MULE_SESSION=rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkODkxMTkxYjAtNTBiOS0xMWU1LWIzMWItNzIyMDg0MDZkMWE1c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+INFO  2015-09-01 22:58:10,989 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 22:58:10,991 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: activemq-messagingFlow
+INFO  2015-09-01 22:58:10,991 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Removing listener on endpointUri: jms://Customer.Information
+INFO  2015-09-01 22:58:10,993 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping: 'null'. Object is: MultiConsumerJmsMessageReceiver
+INFO  2015-09-01 22:58:10,997 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing: 'null'. Object is: MultiConsumerJmsMessageReceiver
+INFO  2015-09-01 22:58:10,998 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: activemq-messagingFlow.stage1
+INFO  2015-09-01 22:58:11,164 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 22:58:11,164 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 22:58:11,213 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Stopping component: component.362209701
+INFO  2015-09-01 22:58:11,214 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2015-09-01 22:58:11,216 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping connector: Active_MQ
+INFO  2015-09-01 22:58:11,246 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081
+INFO  2015-09-01 22:58:11,247 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2015-09-01 22:58:11,247 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2015-09-01 22:58:11,251 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'ActiveMQ-Messaging'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 22:58:11,252 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2015-09-01 22:58:11,253 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: activemq-messagingFlow
+INFO  2015-09-01 22:58:11,253 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: activemq-messagingFlow.stage1
+INFO  2015-09-01 22:58:11,254 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 22:58:11,254 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 22:58:11,254 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Disposing component: component.362209701
+INFO  2015-09-01 22:58:11,256 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2015-09-01 22:58:11,267 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=stop
+  this=8ff20ba
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 22:58:11,269 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing connector: Active_MQ
+INFO  2015-09-01 22:58:11,409 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@20c3b85a: startup date [Tue Sep 01 22:56:22 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 22:58:11,477 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "ActiveMQ-Messaging" shut down normally on: 9/1/15     *
+* 10:58 PM                                                           *
+* Up for: 0 days, 0 hours, 1 mins, 46.261 sec                        *
+**********************************************************************
+INFO  2015-09-01 22:58:11,534 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ActiveMQ-Messaging'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 22:58:11,543 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2015-09-01 22:58:11,549 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2015-09-01 22:58:11,570 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2015-09-01 22:58:11,570 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.7)
+INFO  2015-09-01 22:58:11,573 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@beb480d: startup date [Tue Sep 01 22:58:11 EDT 2015]; root of context hierarchy
+INFO  2015-09-01 22:58:11,946 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2015-09-01 22:58:12,003 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 22:58:12,004 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 22:58:12,004 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2015-09-01 22:58:12,004 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+INFO  2015-09-01 22:58:12,192 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising connector: Active_MQ
+INFO  2015-09-01 22:58:12,230 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2015-09-01 22:58:12,234 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: activemq-messagingFlow
+INFO  2015-09-01 22:58:12,235 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@45d0e784
+INFO  2015-09-01 22:58:12,239 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: activemq-messagingFlow.stage1
+INFO  2015-09-01 22:58:12,240 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 22:58:12,241 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@a734588
+INFO  2015-09-01 22:58:12,241 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@15d9e914
+INFO  2015-09-01 22:58:12,241 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@15552b41
+INFO  2015-09-01 22:58:12,242 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.CatchMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@a8ac358
+INFO  2015-09-01 22:58:12,248 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 22:58:12,249 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Initialising component: component.1273583844
+INFO  2015-09-01 22:58:12,270 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-tx-log/tx2.log
+INFO  2015-09-01 22:58:12,271 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx1.log and /Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/./.mule/ActiveMQ-Messaging/queue-xa-tx-log/tx2.log
+INFO  2015-09-01 22:58:12,304 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 22:58:12,304 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/Gary2013/AnypointStudio-3.7-8-18/workspace/.mule/apps/ActiveMQ-Messaging/activemq-messaging.xml'}]"
+INFO  2015-09-01 22:58:12,304 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'ActiveMQ-Messaging'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 22:58:12,307 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2015-09-01 22:58:12,307 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2015-09-01 22:58:12,320 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2015-09-01 22:58:12,658 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=19a6a8d8
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 22:58:12,658 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=19a6a8d8
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+INFO  2015-09-01 22:58:12,658 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting connector: Active_MQ
+INFO  2015-09-01 22:58:12,664 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-09-01 22:58:12,665 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2015-09-01 22:58:12,666 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: activemq-messagingFlow
+INFO  2015-09-01 22:58:12,666 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: activemq-messagingFlow.stage1
+INFO  2015-09-01 22:58:12,669 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.activemq.ActiveMQJmsConnector: Registering listener: activemq-messagingFlow on endpointUri: jms://Customer.Information
+INFO  2015-09-01 22:58:12,669 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.service.DefaultTransportServiceDescriptor: Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+INFO  2015-09-01 22:58:12,670 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.service.DefaultTransportServiceDescriptor: Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+INFO  2015-09-01 22:58:12,670 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+INFO  2015-09-01 22:58:12,670 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.MultiConsumerJmsMessageReceiver: Connecting clusterizable message receiver
+INFO  2015-09-01 22:58:12,724 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.MultiConsumerJmsMessageReceiver: Endpoint jms://Customer.Information has been successfully reconnected.
+INFO  2015-09-01 22:58:12,724 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+INFO  2015-09-01 22:58:12,725 [Mule.app.deployer.monitor.1.thread.1] org.mule.transport.jms.MultiConsumerJmsMessageReceiver: Starting clusterizable message receiver
+INFO  2015-09-01 22:58:12,725 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: Mule-Use-Case-A-MainFlow
+INFO  2015-09-01 22:58:12,725 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: Mule-Use-Case-A-MainFlow.stage1
+INFO  2015-09-01 22:58:12,729 [Mule.app.deployer.monitor.1.thread.1] org.mule.component.ComponentLifecycleManager: Starting component: component.1273583844
+INFO  2015-09-01 22:58:12,740 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2015-09-01 22:58:12,748 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.AbstractJmxAgent: Attempting to register service with name: Mule.ActiveMQ-Messaging:type=Endpoint,service="activemq-messagingFlow",connector=Active_MQ,name="endpoint.jms.Customer.Information"
+INFO  2015-09-01 22:58:12,748 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.AbstractJmxAgent: Registered Endpoint Service with name: Mule.ActiveMQ-Messaging:type=Endpoint,service="activemq-messagingFlow",connector=Active_MQ,name="endpoint.jms.Customer.Information"
+INFO  2015-09-01 22:58:12,749 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.AbstractJmxAgent: Registered Connector Service with name Mule.ActiveMQ-Messaging:type=Connector,name="Active.MQ"
+INFO  2015-09-01 22:58:12,752 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: ActiveMQ-Messaging                                    *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+WARN  2015-09-01 22:58:50,636 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.routing.ExpressionSplitter: Splitter returned no results. If this is not expected, please check your split expression
+INFO  2015-09-01 23:00:32,728 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: {phone=999-888-7778, contact_name=Contact_A, company_name=Company_A, company_address=Address_A, id=101}
+INFO  2015-09-01 23:00:34,488 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.transport.service.DefaultTransportServiceDescriptor: Loading default outbound transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+INFO  2015-09-01 23:00:34,489 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.transport.service.DefaultTransportServiceDescriptor: Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+WARN  2015-09-01 23:00:34,489 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] com.mulesoft.mule.transport.jms.EeJmsMessageDispatcher: Starting patched JmsMessageReceiver
+INFO  2015-09-01 23:00:34,490 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.lifecycle.AbstractLifecycleManager: Initialising: 'Active_MQ.dispatcher.538306014'. Object is: EeJmsMessageDispatcher
+INFO  2015-09-01 23:00:34,491 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.lifecycle.AbstractLifecycleManager: Starting: 'Active_MQ.dispatcher.538306014'. Object is: EeJmsMessageDispatcher
+INFO  2015-09-01 23:00:35,231 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: {phone=999-888-7778, contact_name=Contact_B, company_name=Company_B, company_address=Address_B, id=102}
+INFO  2015-09-01 23:00:38,758 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.02] org.mule.api.processor.LoggerMessageProcessor: {"phone":"999-888-7778","contact_name":"Contact_A","company_name":"Company_A","company_address":"Address_A","id":101}
+INFO  2015-09-01 23:00:41,327 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: {phone=999-888-7778, contact_name=Contact_A1, company_name=Company_A1, company_address=Address_A1, id=111}
+INFO  2015-09-01 23:00:45,303 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.02] org.mule.api.processor.LoggerMessageProcessor: {"phone":"999-888-7778","contact_name":"Contact_B","company_name":"Company_B","company_address":"Address_B","id":102}
+INFO  2015-09-01 23:00:48,071 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: {phone=999-888-7778, contact_name=Contact_A2, company_name=Company_A2, company_address=Address_A2, id=112}
+INFO  2015-09-01 23:00:50,795 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.02] org.mule.api.processor.LoggerMessageProcessor: {"phone":"999-888-7778","contact_name":"Contact_A1","company_name":"Company_A1","company_address":"Address_A1","id":111}
+INFO  2015-09-01 23:00:53,278 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: {phone=999-888-7778, contact_name=Contact_A3, company_name=Company_A3, company_address=Address_A3, id=113}
+INFO  2015-09-01 23:00:55,945 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.02] org.mule.api.processor.LoggerMessageProcessor: {"phone":"999-888-7778","contact_name":"Contact_A2","company_name":"Company_A2","company_address":"Address_A2","id":112}
+INFO  2015-09-01 23:00:58,566 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: {phone=999-888-7778, contact_name=Contact_AB1, company_name=Company_A, company_address=Address_AB1, id=123}
+INFO  2015-09-01 23:01:01,595 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.02] org.mule.api.processor.LoggerMessageProcessor: {"phone":"999-888-7778","contact_name":"Contact_A3","company_name":"Company_A3","company_address":"Address_A3","id":113}
+INFO  2015-09-01 23:01:04,118 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: {phone=999-888-7778, contact_name=Contact_AB4, company_name=Company_A, company_address=Address_AB4, id=124}
+INFO  2015-09-01 23:01:08,254 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.02] org.mule.api.processor.LoggerMessageProcessor: {"phone":"999-888-7778","contact_name":"Contact_AB1","company_name":"Company_A","company_address":"Address_AB1","id":123}
+INFO  2015-09-01 23:01:12,654 [[ActiveMQ-Messaging].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: {phone=999-888-7778, contact_name=Contact_AB5, company_name=Company_A, company_address=Address_AB5, id=125}
+INFO  2015-09-01 23:01:25,754 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.02] org.mule.api.processor.LoggerMessageProcessor: {"phone":"999-888-7778","contact_name":"Contact_AB4","company_name":"Company_A","company_address":"Address_AB4","id":124}
+INFO  2015-09-01 23:01:36,394 [[ActiveMQ-Messaging].activemq-messagingFlow.stage1.02] org.mule.api.processor.LoggerMessageProcessor: {"phone":"999-888-7778","contact_name":"Contact_AB5","company_name":"Company_A","company_address":"Address_AB5","id":125}

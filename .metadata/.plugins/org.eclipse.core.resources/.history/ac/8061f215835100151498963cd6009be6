@@ -1,0 +1,5 @@
+#Wed Sep 02 09:21:22 EDT 2015
+redeployment.enabled=true
+encoding=UTF-8
+config.resources=mule-refactoring.xml,common.xml
+domain=default
